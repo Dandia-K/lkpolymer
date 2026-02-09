@@ -7,9 +7,11 @@ body {
 }
 
 nav {
-  background-color: #1f7a4f; /* 초록 */
+  background-color: #1f7a4f;
   padding: 12px 20px;
+  text-align: center;
 }
+
 
 nav a {
   color: white;
