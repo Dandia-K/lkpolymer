@@ -10,35 +10,36 @@
 <nav class="header">
 
   <!-- 상단 바 -->
+<nav class="header">
+
   <div class="nav-top">
 
-    <!-- 로고 영역 -->
     <div class="nav-logo">
       <a href="index.html" class="logo">
         <img src="logo.jpg" alt="LK폴리머 로고">
       </a>
     </div>
 
-    <!-- 메뉴 영역 (⭐ 부메뉴 기준) -->
-    <div class="nav-menu">
-      <ul class="main-menu">
-        <li>회사소개</li>
-        <li>제품소개</li>
-        <li>공장소개</li>
-        <li>인증현황</li>
-        <li>연락문의</li>
-      </ul>
-
-      <!-- 메가 메뉴 -->
-      <div class="mega-menu">
-        <div class="mega-inner">
-          <!-- 기존 mega-column 그대로 -->
-        </div>
-      </div>
-    </div>
+    <!-- ⭐ 이 div가 핵심 -->
+    <ul class="main-menu">
+      <li>회사소개</li>
+      <li>제품소개</li>
+      <li>공장소개</li>
+      <li>인증현황</li>
+      <li>연락문의</li>
+    </ul>
 
   </div>
+
+  <!-- ⭐ mega-menu가 nav-top 밖, header 안에 있어야 함 -->
+  <div class="mega-menu">
+    <div class="mega-inner">
+      <!-- mega-column들 -->
+    </div>
+  </div>
+
 </nav>
+
 
 <hr>
 
