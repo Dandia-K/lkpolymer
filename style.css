@@ -157,3 +157,8 @@ h1 {
 .menu-item:hover .submenu {
   display: block;
 }
+
+/* ===== 메뉴 hover 시 글자 안 보이는 문제 해결 ===== */
+.nav-inner a:hover {
+  color: #ffffff; /* 글자색 강제 */
+}
