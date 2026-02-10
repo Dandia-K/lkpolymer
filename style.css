@@ -251,11 +251,15 @@ nav:hover .mega-menu {
   height: 70px;
   display: flex;
   align-items: center;
-  gap: 60px;
 }
 
 
+
 /* 로고 */
+.nav-logo {
+  margin-right: 60px;   /* 로고 ↔ 메뉴 간격 */
+}
+
 .logo img {
   height: 28px;
 }
