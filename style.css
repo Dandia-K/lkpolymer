@@ -1,203 +1,90 @@
-/* ===== 기본 ===== */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.8;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>LK폴리머</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-a {
-  text-decoration: none;
-}
+<!-- ===== HEADER (모든 페이지 공통) ===== -->
+<nav class="header">
 
-/* ===== HEADER ===== */
-.header {
-  position: relative;
-  width: 100%;
-  background-color: #1f7a4f;
-}
+  <div class="nav-top">
 
-/* 상단 바 */
-.nav-top {
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 70px;
-  display: flex;
-  align-items: center;
-}
+    <!-- 로고 (홈) -->
+    <div class="nav-logo">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="LK폴리머 로고">
+      </a>
+    </div>
 
-/* 로고 */
-.nav-logo {
-  margin-right: 60px;   /* 🔥 로고를 왼쪽으로 더 밀어줌 */
-}
+    <!-- 메인 메뉴 -->
+    <ul class="main-menu">
+      <li><a href="about.html">회사소개</a></li>
+      <li><a href="products.html">제품소개</a></li>
+      <li><a href="extrusion.html">공장소개</a></li>
+      <li><a href="certificates.html">인증현황</a></li>
+      <li><a href="question.html">연락문의</a></li>
+    </ul>
 
-.logo img {
-  height: 28px;
-  display: block;
-}
+  </div>
 
-/* 메인 메뉴 */
-.main-menu {
-  list-style: none;
-  display: flex;
-  gap: 48px;
-  margin: 0;
-  padding: 0;
-}
+  <!-- ===== 메가 메뉴 ===== -->
+  <div class="mega-menu">
+    <div class="mega-inner">
 
-.main-menu li {
-  color: #ffffff;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 8px 0;
-}
+      <div class="mega-column">
+        <h4>회사소개</h4>
+        <a href="history.html">연혁</a>
+        <a href="ceo.html">CEO 인사말</a>
+        <a href="location.html">오시는 길</a>
+      </div>
 
-.main-menu li:hover {
-  opacity: 0.85;
-}
+      <div class="mega-column">
+        <h4>제품소개</h4>
+        <a href="spgb.html">종량제봉투</a>
+        <a href="plasticbag.html">일반봉투</a>
+      </div>
 
-/* ===== MEGA MENU ===== */
-.mega-menu {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  border-top: 1px solid #ddd;
-  z-index: 1000;
+      <div class="mega-column">
+        <h4>공장소개</h4>
+        <a href="extrusion.html">압출시설</a>
+        <a href="printing.html">인쇄시설</a>
+        <a href="foundation.html">가공시설</a>
+        <a href="factoryect.html">기타</a>
+      </div>
 
-  /* 애니메이션용 */
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
+      <div class="mega-column">
+        <h4>인증현황</h4>
+        <a href="certificates.html">인증서</a>
+      </div>
 
+      <div class="mega-column">
+        <h4>연락문의</h4>
+        <a href="question.html">자주찾는질문</a>
+        <a href="contact.html">상담요청</a>
+      </div>
 
-/* 헤더에 마우스 올리면 부메뉴 전체 표시 */
-.header:hover .mega-menu {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
+    </div>
+  </div>
 
-.header::after {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-}
+</nav>
 
-.main-menu li:hover {
-  color: #d9ffe9;
-}
+<!-- ===== MAIN CONTENT ===== -->
+<div class="container">
+  <h1>LK폴리머</h1>
 
+  <p style="font-size:18px; font-weight:600;">
+    종량제봉투 및 쓰레기봉투 전문 제조업체
+  </p>
 
-/* 부메뉴 내부 */
-.mega-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 20px 36px;  /* 위 여백 줄임 */
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
-}
+  <p>
+    LK폴리머는 2025년 설립된 제조업체로<br>
+    철저한 품질 관리와 납기 준수를 바탕으로<br>
+    신뢰받는 생산 파트너가 되고자 합니다.
+  </p>
 
-
-/* 부메뉴 컬럼 */
-.mega-column h4 {
-  margin-bottom: 14px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #000;
-}
-
-.mega-column a {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #555;
-}
-
-.mega-column a:hover {
-  color: #1f7a4f;
-  text-decoration: underline;
-}
-
-/* ===== 본문 ===== */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-h1 {
-  color: #1f7a4f;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* ===== 상담요청 폼 ===== */
-.contact-form {
-  max-width: 500px;
-  margin: 30px auto;
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.contact-form button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background-color: #1f7a4f;
-  color: white;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #16633f;
-}
-
-/* ===== 모바일 ===== */
-@media (max-width: 768px) {
-  .nav-top {
-    justify-content: center;
-  }
-
-  .main-menu {
-    gap: 20px;
-  }
-
-  .mega-inner {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-}
+  <p style="margin-top:30px;">
+    ✔ 종량제봉투 ·
