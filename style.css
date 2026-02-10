@@ -109,6 +109,10 @@ h1 {
 }
 
 /* ===== 드롭다운 메뉴 ===== */
+.nav-menu {
+  position: relative;   /* ⭐⭐⭐ 부메뉴 기준 */
+}
+
 .menu-item {
   position: relative;
   display: inline-block;
@@ -202,22 +206,29 @@ nav {
 /* ===== 메가 메뉴 (부메뉴 한 칸) ===== */
 .mega-menu {
   display: none;
+  position: absolute;
+  top: 100%;        /* 메인메뉴 바로 아래 */
+  left: 0;
+  width: 100vw;     /* 화면 전체로 펼침 */
   background-color: #ffffff;
   border-top: 1px solid #ddd;
 }
 
-nav:hover .mega-menu {
+
+.nav-menu:hover .mega-menu {
   display: block;
 }
 
+
 .mega-inner {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 10px;
-  display: flex;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 40px;
-  justify-content: center;
 }
+
 
 /* 부메뉴 컬럼 */
 .mega-column h4 {
