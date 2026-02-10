@@ -329,3 +329,42 @@ nav:hover .mega-menu {
 .mega-column.active h4 {
   color: #1f7a4f;
 }
+/* ===== 상담요청 폼 ===== */
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #1f7a4f;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #16633f;
+}
