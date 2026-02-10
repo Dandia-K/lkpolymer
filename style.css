@@ -107,3 +107,53 @@ h1 {
 .nav-inner a:not(.logo):hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* ===== 드롭다운 메뉴 ===== */
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* 1차 메뉴 */
+.menu-item > a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* 부메뉴 박스 */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 6px 0;
+  z-index: 999;
+}
+
+/* 부메뉴 링크 */
+.submenu a {
+  display: block;
+  padding: 8px 14px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* hover 시 부메뉴 표시 */
+.menu-item:hover .submenu {
+  display: block;
+}
