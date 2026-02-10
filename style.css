@@ -163,3 +163,78 @@ nav:hover .submenu {
 .nav-inner a:hover {
   color: #ffffff; /* 글자색 강제 */
 }
+
+/* ===== 상단 기본 ===== */
+nav {
+  background-color: #1f7a4f;
+  position: relative;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 로고 */
+.logo img {
+  height: 28px;
+}
+
+/* 1차 메뉴 */
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: rgba(255,255,255,0.25);
+  color: #ffffff; /* 🔥 글씨 안 사라지게 */
+}
+
+/* ===== 메가 메뉴 (부메뉴 한 칸) ===== */
+.mega-menu {
+  display: none;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+nav:hover .mega-menu {
+  display: block;
+}
+
+.mega-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* 부메뉴 컬럼 */
+.mega-column h4 {
+  margin: 0 0 10px;
+  color: #1f7a4f;
+  font-size: 15px;
+}
+
+.mega-column a {
+  display: block;
+  color: #333333;          /* 🔥 글씨 색 명확 */
+  text-decoration: none;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.mega-column a:hover {
+  color: #1f7a4f;
+  text-decoration: underline;
+}
