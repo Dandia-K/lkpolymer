@@ -267,7 +267,9 @@ nav:hover .mega-menu {
   gap: 50px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
+
 
 .main-menu li {
   font-weight: 600;
@@ -279,12 +281,13 @@ nav:hover .mega-menu {
 .mega-menu {
   display: none;
   position: absolute;
-  top: 70px;
+  top: 100%;                 /* 메인 메뉴 바로 아래 */
   left: 0;
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #ddd;
 }
+
 
 /* header에 hover하면 전체 부메뉴 표시 */
 .header:hover .mega-menu {
