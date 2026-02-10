@@ -69,9 +69,10 @@ a {
 }
 
 /* 헤더에 마우스 올리면 부메뉴 전체 표시 */
-.header:hover .mega-menu {
+.header:hover > .mega-menu {
   display: block;
 }
+
 
 /* 부메뉴 내부 */
 .mega-inner {
