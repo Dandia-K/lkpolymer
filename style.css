@@ -238,3 +238,84 @@ nav:hover .mega-menu {
   color: #1f7a4f;
   text-decoration: underline;
 }
+/* ===== 헤더 ===== */
+.header {
+  position: relative;
+  width: 100%;
+}
+
+/* 상단 영역 */
+.nav-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 로고 */
+.logo img {
+  height: 28px;
+}
+
+/* 메인 메뉴 */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  font-weight: 600;
+  cursor: pointer;
+  color: #111;
+}
+
+/* ===== 메가 메뉴 ===== */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+/* header에 hover하면 전체 부메뉴 표시 */
+.header:hover .mega-menu {
+  display: block;
+}
+
+/* 내부 정렬 */
+.mega-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+/* 컬럼 */
+.mega-column h4 {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.mega-column a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+
+.mega-column a:hover {
+  color: #1f7a4f;
+}
