@@ -319,3 +319,13 @@ nav:hover .mega-menu {
 .mega-column a:hover {
   color: #1f7a4f;
 }
+/* ===== 활성화 상태 ===== */
+.mega-column a.active {
+  color: #1f7a4f;
+  font-weight: 700;
+}
+
+/* 해당 컬럼 제목도 강조 */
+.mega-column.active h4 {
+  color: #1f7a4f;
+}
