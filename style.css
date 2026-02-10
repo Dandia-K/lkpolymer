@@ -52,3 +52,29 @@ h1 {
 .container li {
   margin: 6px 0;
 }
+/* ===== 모바일 최적화 ===== */
+@media (max-width: 768px) {
+
+  /* 메뉴 버튼 */
+  .nav-inner a {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 6px 4px;
+    font-size: 14px;
+  }
+
+  /* 본문 여백 */
+  .container {
+    padding: 20px 14px;
+  }
+
+  /* 제목 크기 */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* 문단 글씨 */
+  p, li {
+    font-size: 15px;
+  }
+}
