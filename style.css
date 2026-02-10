@@ -91,7 +91,7 @@ h1 {
 
 /* 로고 */
 .nav-inner a.logo img {
-  height: 24px;   /* 24~32 사이에서 취향대로 */
+  height: 30px;   /* 24~32 사이에서 취향대로 */
   display: block;
 }
 
