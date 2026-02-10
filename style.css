@@ -78,3 +78,31 @@ h1 {
     font-size: 15px;
   }
 }
+
+/* ===== 로고 메뉴 ===== */
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 로고 */
+.nav-inner a.logo img {
+  height: 40px;
+}
+
+/* 메뉴 버튼 */
+.nav-inner a:not(.logo) {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.nav-inner a:not(.logo):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
