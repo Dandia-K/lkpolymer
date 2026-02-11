@@ -39,4 +39,72 @@ a {
 
 .main-menu {
   list-style: none;
-  display: f
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+.main-menu li a.active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header:hover .mega-menu {
+  display: block;
+}
+
+.mega-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 36px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.mega-column h4 {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.mega-column a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.mega-column a:hover {
+  color: #1f7a4f;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1f7a4f;
+}
