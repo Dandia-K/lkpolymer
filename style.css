@@ -108,3 +108,33 @@ a {
 h1 {
   color: #1f7a4f;
 }
+/* ===== FOOTER ===== */
+
+.site-footer {
+  background-color: #4b4b4b;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-inner p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  padding: 16px 0;
+  font-size: 13px;
+  color: #cccccc;
+}
