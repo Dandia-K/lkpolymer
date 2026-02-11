@@ -138,3 +138,15 @@ h1 {
   font-size: 13px;
   color: #cccccc;
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
