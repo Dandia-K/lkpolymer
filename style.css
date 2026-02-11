@@ -34,7 +34,14 @@ a {
 
 /* 로고 */
 .nav-logo {
-  width: 120px;
+  margin-right: 80px;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -52,6 +59,7 @@ a {
 }
 
 
+
 .main-menu li a {
   color: #ffffff;
   font-weight: 600;
@@ -64,13 +72,15 @@ a {
 
 .mega-menu {
   display: none;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
+  background: #ffffff;
   border-top: 1px solid #ddd;
-  z-index: 1000;
+}
+
+.mega-menu .nav-inner {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
 }
 
 .header:hover .mega-menu {
