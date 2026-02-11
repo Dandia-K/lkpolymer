@@ -4,10 +4,12 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.8;
-  color: #333;
+  font-family: 'Pretendard', Arial, sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background-color: #f9f9f9;
 }
+
 
 a {
   text-decoration: none;
