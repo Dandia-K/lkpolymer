@@ -26,27 +26,30 @@ a {
 .nav-top {
   max-width: 1200px;
   margin: 0 auto;
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
+  gap: 80px;   /* 로고와 메뉴 간격 */
 }
 
+/* 로고 */
 .nav-logo {
-  margin-right: 60px;
+  flex: 0 0 auto;
 }
 
 .logo img {
-  height: 28px;
-  display: block;
+  height: 30px;
 }
 
+/* 메인 메뉴 */
 .main-menu {
   list-style: none;
   display: flex;
-  gap: 48px;
+  gap: 60px;
   margin: 0;
   padding: 0;
 }
+
 
 .main-menu li a {
   color: #ffffff;
