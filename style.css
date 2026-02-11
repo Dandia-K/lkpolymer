@@ -34,8 +34,9 @@ a {
 
 /* 로고 */
 .nav-logo {
-  flex: 0 0 auto;
+  width: 120px;
 }
+
 
 .logo img {
   height: 30px;
@@ -202,4 +203,11 @@ body {
 
 .hero-btn:hover {
   background-color: #16633f;
+}
+
+/* 로고 폭만큼 메가메뉴 시작 위치 밀기 */
+.mega-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px 50px 110px; 
 }
