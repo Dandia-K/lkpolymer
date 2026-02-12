@@ -38,6 +38,14 @@ a {
   height: 80px;
 }
 
+.nav-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
 /* 로고 */
 .nav-logo {
   margin-right: 80px;
@@ -58,13 +66,15 @@ a {
 }
 
 .main-menu li a {
-  color: #ffffff;
+  color: white;
+  text-decoration: none;
   font-weight: 600;
   font-size: 16px;
 }
 
+
 .main-menu li a:hover {
-  opacity: 0.8;
+  border-bottom: 2px solid white;
 }
 
 /* =============================
@@ -72,7 +82,7 @@ a {
 ============================= */
 
 .mega-menu {
-  display: none;           /* 기본은 숨김 */
+  display: none;
   position: absolute;
   left: 0;
   width: 100%;
@@ -80,6 +90,9 @@ a {
   border-top: 1px solid #ddd;
 }
 
+
+
+/* hover 시 열림 */
 .header:hover .mega-menu {
   display: block;
 }
