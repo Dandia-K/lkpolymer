@@ -513,3 +513,59 @@ body {
 .faq-answer.active {
   display: block;
 }
+
+/* ===== 상담 페이지 ===== */
+.contact-section {
+  display: flex;
+  gap: 60px;
+  margin: 100px auto;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-form-box {
+  flex: 1.5;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+  }
+}
