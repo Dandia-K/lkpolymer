@@ -1,179 +1,173 @@
-/* ===== 기본 설정 ===== */
+/* ===== 기본 초기화 ===== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
 }
 
-/* ===== HEADER ===== */
+
+/* ===== 헤더 전체 ===== */
 .header {
   width: 100%;
-  background-color: #1f7a4f;
+  background: #ffffff;
   position: relative;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* 상단 정렬 영역 */
 .nav-top {
   max-width: 1200px;
   margin: 0 auto;
-  height: 70px;
+  height: 90px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* 로고 */
-.nav-logo {
-  margin-right: 80px;
-}
-
-.logo img {
-  height: 30px;
-  display: block;
+/* ===== 로고 ===== */
+.nav-logo img {
+  height: 55px;
 }
 
 /* ===== 메인 메뉴 ===== */
 .main-menu {
   list-style: none;
   display: flex;
-  gap: 60px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-menu li {
-  list-style: none;
+  gap: 55px;
 }
 
 .main-menu li a {
-  color: white;
   text-decoration: none;
+  font-size: 20px;
   font-weight: 600;
-  font-size: 16px;
-  padding-bottom: 4px;
+  color: #0f5e34;
+  position: relative;
+  padding-bottom: 8px;
 }
 
+/* 메뉴 hover 밑줄 */
 .main-menu li a:hover {
-  border-bottom: 2px solid white;
+  color: #0f5e34;
 }
+
+.main-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #0f5e34;
+  transition: 0.3s;
+}
+
+.main-menu li a:hover::after {
+  width: 100%;
+}
+
+
+/* ===== 헤더 하단 초록 라인 ===== */
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #0f5e34;
+}
+
 
 /* ===== 메가 메뉴 ===== */
 .mega-menu {
   display: none;
-  position: absolute;
-  top: 70px;
-  left: 0;
   width: 100%;
-  background-color: #ffffff;
-  border-top: 1px solid #ddd;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
 }
 
-/* 헤더에 마우스 올리면 열림 */
 .header:hover .mega-menu {
   display: block;
 }
 
-/* 내부 정렬 (⭐ 핵심 동일 기준) */
 .mega-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 60px;
 }
 
-/* 부메뉴 컬럼 */
+/* 부메뉴 제목 */
 .mega-column h4 {
-  margin-bottom: 15px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #0f5e34;
 }
 
+/* 부메뉴 링크 */
 .mega-column a {
   display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #555;
   text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: 0.2s;
 }
 
 .mega-column a:hover {
-  color: #1f7a4f;
+  color: #0f5e34;
 }
+
 
 /* ===== 본문 ===== */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-h1 {
-  margin-top: 0;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #444;
-  color: white;
-  padding: 40px 0;
-  margin-top: 100px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.8;
-}
-/* ===== 본문 강제 중앙 정렬 복구 ===== */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-body {
-  background-color: #f5f5f5;
-}
-
-/* ===== 본문 완전 복구 ===== */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
-}
-
-/* 헤더 아래 영역 */
-.container {
-  width: 100%;
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 20px;
-  box-sizing: border-box;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-/* 혹시 flex 영향 제거 */
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.main-menu {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
+.container h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
-/* 본문이 flex에 먹히는 경우 방지 */
-.container {
-  display: block;
+.container p {
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.container ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container li {
+  margin-bottom: 8px;
+}
+
+
+/* ===== 푸터 ===== */
+.footer {
+  background: #8e8e8e;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-top: 100px;
 }
