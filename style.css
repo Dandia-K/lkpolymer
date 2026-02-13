@@ -1,7 +1,4 @@
-/* =============================
-   기본 리셋
-============================= */
-
+/* ===== 기본 설정 ===== */
 * {
   box-sizing: border-box;
 }
@@ -9,35 +6,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-  color: #222;
-  background-color: #f5f5f5;
+  color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* =============================
-   HEADER
-============================= */
-
+/* ===== HEADER ===== */
 .header {
   width: 100%;
   background-color: #1f7a4f;
-  position: relative;   /* 이거 중요 */
+  position: relative;
 }
 
-
-.nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
+/* 상단 정렬 영역 */
 .nav-top {
   max-width: 1200px;
   margin: 0 auto;
@@ -51,12 +30,12 @@ a {
   margin-right: 80px;
 }
 
-.nav-logo img {
+.logo img {
   height: 30px;
   display: block;
 }
 
-/* 메인 메뉴 */
+/* ===== 메인 메뉴 ===== */
 .main-menu {
   list-style: none;
   display: flex;
@@ -65,51 +44,53 @@ a {
   padding: 0;
 }
 
+.main-menu li {
+  list-style: none;
+}
+
 .main-menu li a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  padding-bottom: 4px;
 }
-
 
 .main-menu li a:hover {
   border-bottom: 2px solid white;
 }
 
-/* =============================
-   메가 메뉴
-============================= */
-
+/* ===== 메가 메뉴 ===== */
 .mega-menu {
   display: none;
   position: absolute;
+  top: 70px;
   left: 0;
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #ddd;
 }
 
-
-
-/* hover 시 열림 */
+/* 헤더에 마우스 올리면 열림 */
 .header:hover .mega-menu {
   display: block;
 }
 
-.mega-menu .nav-inner {
-  height: auto;
+/* 내부 정렬 (⭐ 핵심 동일 기준) */
+.mega-inner {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 60px;
 }
 
+/* 부메뉴 컬럼 */
 .mega-column h4 {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   font-size: 15px;
   font-weight: 700;
-  color: #000;
 }
 
 .mega-column a {
@@ -117,103 +98,35 @@ a {
   margin-bottom: 10px;
   font-size: 14px;
   color: #555;
+  text-decoration: none;
 }
 
 .mega-column a:hover {
   color: #1f7a4f;
 }
 
-/* =============================
-   HERO (있을 경우)
-============================= */
-
-.hero {
-  height: 520px;
-  background: url('logo.jpg') center/cover no-repeat;
-  position: relative;
-}
-
-.hero-overlay {
-  background-color: rgba(0,0,0,0.45);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: #ffffff;
-}
-
-.hero-content h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #1f7a4f;
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.hero-btn:hover {
-  background-color: #16633f;
-}
-
-/* =============================
-   본문 영역
-============================= */
-
+/* ===== 본문 ===== */
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
-  text-align: center;
 }
 
 h1 {
-  color: #1f7a4f;
+  margin-top: 0;
 }
 
-/* =============================
-   FOOTER
-============================= */
-
-.site-footer {
-  background-color: #3f3f3f;
-  color: #ffffff;
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #444;
+  color: white;
+  padding: 40px 0;
   margin-top: 100px;
 }
 
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-inner p {
-  margin: 6px 0;
   font-size: 14px;
-  color: #e0e0e0;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.2);
-  text-align: center;
-  padding: 16px 0;
-  font-size: 13px;
-  color: #cccccc;
+  line-height: 1.8;
 }
