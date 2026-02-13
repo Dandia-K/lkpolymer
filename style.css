@@ -798,3 +798,80 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===============================
+   📱 모바일 최적화
+================================ */
+
+@media (max-width: 900px) {
+
+  /* ===== 상단 메뉴 ===== */
+  .nav-top {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  /* 메가메뉴 모바일에서는 숨김 */
+  .mega-menu {
+    display: none !important;
+  }
+
+  /* ===== 페이지 타이틀 ===== */
+  .page-title {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+  }
+
+  .page-title p {
+    font-size: 14px;
+  }
+
+  /* ===== 카드형 레이아웃 1열로 ===== */
+  .about-grid,
+  .product-grid,
+  .factory-grid,
+  .cert-grid,
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  /* 카드 padding 줄이기 */
+  .about-card,
+  .product-card,
+  .factory-card,
+  .cert-card,
+  .contact-card {
+    padding: 30px;
+  }
+
+  /* 이미지 높이 자동 */
+  .product-thumb img,
+  .factory-card img {
+    height: auto;
+  }
+
+  /* 섹션 여백 줄이기 */
+  section {
+    padding: 50px 0;
+  }
+
+  /* footer 여백 줄이기 */
+  .footer {
+    margin-top: 60px;
+    padding: 40px 20px;
+    font-size: 13px;
+  }
+
+}
