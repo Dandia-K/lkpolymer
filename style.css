@@ -997,3 +997,25 @@ body {
 .cert-close:hover {
   transform: scale(1.2);
 }
+
+/* ===============================
+   🔥 인증서 4개 정렬 강제 적용
+================================ */
+
+.cert-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px !important;
+  max-width: 1200px;
+  margin: 80px auto 120px auto;
+}
+
+.cert-card {
+  padding: 20px !important;
+}
+
+.cert-card img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: contain !important;
+}
