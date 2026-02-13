@@ -82,21 +82,23 @@ body {
 }
 
 
-/* ===== 메가 메뉴 ===== */
+/* ===== 메가 메뉴 기본 숨김 ===== */
 .mega-menu {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
   background: #ffffff;
-  border-top: 1px solid #e5e5e5;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 1000;
+  border-top: 2px solid #0f5e34;
+  z-index: 999;
 }
 
+/* header에 마우스 올리면 무조건 펼침 */
 .header:hover .mega-menu {
   display: block;
 }
+
 
 .mega-inner {
   max-width: 1200px;
