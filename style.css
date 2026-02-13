@@ -383,3 +383,53 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ===== 공장소개 공통 ===== */
+.factory-hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.factory-section {
+  max-width: 1000px;
+  margin: 0 auto 100px auto;
+}
+
+.factory-section h2 {
+  margin-bottom: 20px;
+}
+
+.factory-section p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.factory-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.factory-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.factory-box h4 {
+  margin-bottom: 10px;
+  color: #0f5e34;
+}
+
+@media (max-width: 900px) {
+  .factory-features {
+    grid-template-columns: 1fr;
+  }
+}
