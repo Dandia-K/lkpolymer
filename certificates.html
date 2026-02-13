@@ -79,31 +79,33 @@
 
   <div class="cert-item">
     <img src="cert1.jpg" onclick="openModal(this.src)">
-    <p>단체표준인증 음식물전용</p>
+    <p>단체표준인증 HDPE, LLDPE</p>
   </div>
 
   <div class="cert-item">
     <img src="cert2.jpg" onclick="openModal(this.src)">
-    <p>단체표준인증 재사용봉투</p>
-  </div>
-
-  <div class="cert-item">
-    <img src="cert3.jpg" onclick="openModal(this.src)">
     <p>단체표준인증 탄산칼슘함유봉투</p>
   </div>
 
   <div class="cert-item">
+    <img src="cert3.jpg" onclick="openModal(this.src)">
+    <p>단체표준인증 재사용봉투</p>
+  </div>
+
+  <div class="cert-item">
     <img src="cert4.jpg" onclick="openModal(this.src)">
-    <p>단체표준인증 HD,LLD</p>
+    <p>단체표준인증 음식물봉투</p>
   </div>
 
 </section>
 
 
 <!-- ===== 모달창 ===== -->
-<div id="certModal" class="cert-modal" onclick="closeModal()">
+<div id="certModal" class="cert-modal">
+  <span class="cert-close" onclick="closeModal()">×</span>
   <img id="modalImg">
 </div>
+
 
 
 <!-- ===== FOOTER ===== -->
@@ -121,14 +123,32 @@
 
 <script>
 function openModal(src) {
-  document.getElementById("certModal").style.display = "flex";
-  document.getElementById("modalImg").src = src;
+  const modal = document.getElementById("certModal");
+  const img = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  img.src = src;
 }
 
 function closeModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
+/* ESC 키로 닫기 */
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+
+/* 🔥 배경 클릭 시 닫기 */
+document.getElementById("certModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
 </script>
+
 
 </body>
 </html>
