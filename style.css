@@ -140,3 +140,40 @@ h1 {
 body {
   background-color: #f5f5f5;
 }
+
+/* ===== 본문 완전 복구 ===== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+}
+
+/* 헤더 아래 영역 */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* 혹시 flex 영향 제거 */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 본문이 flex에 먹히는 경우 방지 */
+.container {
+  display: block;
+}
