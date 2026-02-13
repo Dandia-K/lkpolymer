@@ -11,9 +11,7 @@
 
 <!-- ===== HEADER ===== -->
 <nav class="header">
-
   <div class="nav-top">
-
     <div class="nav-logo">
       <a href="index.html">
         <img src="logo.jpg" alt="LK폴리머 로고">
@@ -23,14 +21,13 @@
     <ul class="main-menu">
       <li><a href="about.html">회사소개</a></li>
       <li><a href="products.html">제품소개</a></li>
-      <li><a href="factory.html">공장소개</a></li>
+      <li><a href="extrusion.html">공장소개</a></li>
       <li><a href="certificates.html">인증현황</a></li>
-      <li><a href="contact-main.html">연락문의</a></li>
+      <li><a href="question.html">연락문의</a></li>
     </ul>
-
   </div>
 
-  <!-- 메가 메뉴 -->
+  <!-- 메가메뉴 그대로 유지 -->
   <div class="mega-menu">
     <div class="mega-inner">
 
@@ -68,46 +65,49 @@
 
     </div>
   </div>
-
 </nav>
+
 
 <!-- ===== PAGE TITLE ===== -->
 <section class="page-title">
-  <h1>인증현황</h1>
-  <p>LK폴리머의 품질 및 인증 현황</p>
+  <h1>특허 / 인증</h1>
 </section>
 
-<!-- ===== INTRO ===== -->
-<section class="container cert-intro">
-  <p>
-    LK폴리머는 관련 법규 및 품질 기준을 철저히 준수하며
-    신뢰할 수 있는 생산 체계를 구축하고 있습니다.
-  </p>
-</section>
 
-<!-- ===== CERT CARDS ===== -->
-<section class="container cert-grid">
+<!-- ===== 인증서 그리드 ===== -->
+<section class="container cert-gallery">
 
-  <a href="cert1.html" class="cert-card">
-    <h3>종량제봉투 규격 인증</h3>
-    <p>지자체 기준 생산 인증</p>
-  </a>
+  <div class="cert-item">
+    <img src="cert1.jpg" onclick="openModal(this.src)">
+    <p>단체표준인증 음식물전용</p>
+  </div>
 
-  <a href="cert2.html" class="cert-card">
-    <h3>환경 관련 인증</h3>
-    <p>친환경 생산 체계 인증</p>
-  </a>
+  <div class="cert-item">
+    <img src="cert2.jpg" onclick="openModal(this.src)">
+    <p>단체표준인증 재사용봉투</p>
+  </div>
 
-  <a href="cert3.html" class="cert-card">
-    <h3>기타 품질 인증</h3>
-    <p>품질 관리 및 생산 관련 인증</p>
-  </a>
+  <div class="cert-item">
+    <img src="cert3.jpg" onclick="openModal(this.src)">
+    <p>단체표준인증 탄산칼슘함유봉투</p>
+  </div>
+
+  <div class="cert-item">
+    <img src="cert4.jpg" onclick="openModal(this.src)">
+    <p>단체표준인증 HD,LLD</p>
+  </div>
 
 </section>
+
+
+<!-- ===== 모달창 ===== -->
+<div id="certModal" class="cert-modal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-
   <p>엘케이폴리머 주식회사</p>
   <p>대표이사 : 김지수</p>
   <p>경기도 화성시 향남읍 토성로 310-32</p>
@@ -116,8 +116,19 @@
   <p>OFFICE HOURS. 평일 09:00 ~ 17:00 (공휴일 휴무)</p>
   <br>
   <p>Copyright © LK POLYMER CO., LTD. All Rights Reserved</p>
-
 </footer>
+
+
+<script>
+function openModal(src) {
+  document.getElementById("certModal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+  document.getElementById("certModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
