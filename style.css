@@ -217,3 +217,52 @@ body {
   margin: 0;
   color: #555;
 }
+
+/* ===== CEO 페이지 ===== */
+.ceo-section {
+  display: flex;
+  gap: 60px;
+  margin: 100px auto;
+  align-items: flex-start;
+}
+
+.ceo-image img {
+  width: 320px;
+  border-radius: 8px;
+  background: #ddd; /* 사진 없을 때 회색 박스 */
+}
+
+.ceo-message {
+  flex: 1;
+}
+
+.ceo-message h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.ceo-message p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.ceo-sign {
+  margin-top: 40px;
+}
+
+.ceo-sign strong {
+  font-size: 18px;
+}
+
+/* 모바일 대응 */
+@media (max-width: 900px) {
+  .ceo-section {
+    flex-direction: column;
+  }
+
+  .ceo-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
