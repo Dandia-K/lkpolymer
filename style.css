@@ -83,21 +83,30 @@ body {
 
 
 /* ===== 메가 메뉴 기본 숨김 ===== */
+/* ===== 메가메뉴 슬라이드 애니메이션 ===== */
+
 .mega-menu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   background: #ffffff;
-  border-top: 2px solid #0f5e34;
-  z-index: 999;
+  border-top: 1px solid #ddd;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden;
+
+  transition: all 0.35s ease;
 }
 
-/* header에 마우스 올리면 무조건 펼침 */
+/* hover 시 */
 .header:hover .mega-menu {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
+
 
 
 .mega-inner {
