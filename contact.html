@@ -6,27 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ===== HEADER (모든 페이지 공통) ===== -->
+<!-- ===== HEADER ===== -->
 <nav class="header">
 
   <div class="nav-top">
 
-    <!-- 로고 -->
     <div class="nav-logo">
-      <a href="index.html" class="logo">
+      <a href="index.html">
         <img src="logo.jpg" alt="LK폴리머 로고">
       </a>
     </div>
 
-    <!-- 메인 메뉴 -->
     <ul class="main-menu">
       <li><a href="about.html">회사소개</a></li>
-      <li><a href="spgb.html">제품소개</a></li>
+      <li><a href="products.html">제품소개</a></li>
       <li><a href="extrusion.html">공장소개</a></li>
       <li><a href="certificates.html">인증현황</a></li>
-      <li><a href="question.html" class="active">연락문의</a></li>
+      <li><a href="question.html">연락문의</a></li>
     </ul>
 
   </div>
@@ -61,10 +60,10 @@
         <a href="certificates.html">인증서</a>
       </div>
 
-      <div class="mega-column active">
+      <div class="mega-column">
         <h4>연락문의</h4>
         <a href="question.html">자주찾는질문</a>
-        <a href="contact.html" class="active">상담요청</a>
+        <a href="contact.html">상담요청</a>
       </div>
 
     </div>
@@ -72,86 +71,77 @@
 
 </nav>
 
-<!-- ===== CONTENT ===== -->
-<div class="container">
+<!-- ===== PAGE TITLE ===== -->
+<section class="page-title">
   <h1>상담요청</h1>
+  <p>제품 문의 및 견적 상담</p>
+</section>
 
-  <p>
-    제품 관련 문의 또는 상담을 원하시면<br>
-    아래 내용을 작성해 주시기 바랍니다.
-  </p>
+<!-- ===== CONTACT SECTION ===== -->
+<section class="container contact-section">
 
-  <!-- ⚠️ GitHub Pages에서는 실제 전송은 안 됨 -->
-  <form class="contact-form">
-    <label>
-      회사명
-      <input type="text" placeholder="회사명을 입력하세요">
-    </label>
-    <br>
+  <!-- 안내 영역 -->
+  <div class="contact-info">
+    <h2>문의 안내</h2>
+    <p>
+      제품 관련 문의 및 견적 요청은<br>
+      아래 상담 요청서를 작성해 주시기 바랍니다.
+    </p>
 
-    <label>
-      담당자명
-      <input type="text" placeholder="담당자명을 입력하세요">
-    </label>
-    <br>
-    
-    <label>
-      연락처
-      <input type="text" placeholder="연락처를 입력하세요">
-    </label>
-    <br>
+    <p>
+      <strong>전화</strong><br>
+      031-352-6317
+    </p>
 
-    <label>
-      이메일
-      <input type="email" placeholder="이메일을 입력하세요">
-    </label>
-    <br>
+    <p>
+      <strong>이메일</strong><br>
+      kjsclean@naver.com
+    </p>
 
-    <label>
-      문의 내용
-      <textarea rows="5" placeholder="문의 내용을 입력하세요"></textarea>
-    </label>
-    <br>
+    <p style="margin-top:30px; font-size:14px; color:#777;">
+      ※ 현재 홈페이지는 이메일 및 전화 상담을 통해 접수받고 있습니다.
+    </p>
+  </div>
 
-    <button type="button">상담 요청</button>
-  </form>
+  <!-- 폼 영역 -->
+  <div class="contact-form-box">
+    <form class="contact-form">
 
-  <p style="margin-top:30px;">
-    ※ 본 사이트는 현재 이메일/전화 상담을 통해<br>
-    문의를 접수받고 있습니다.
-  </p>
+      <label>
+        회사명
+        <input type="text" placeholder="회사명을 입력하세요">
+      </label>
 
-  <p>
-    이메일: <strong>kjsclean@naver.com</strong>
-  </p>
-</div>
+      <label>
+        담당자명
+        <input type="text" placeholder="담당자명을 입력하세요">
+      </label>
+
+      <label>
+        연락처
+        <input type="text" placeholder="연락처를 입력하세요">
+      </label>
+
+      <label>
+        이메일
+        <input type="email" placeholder="이메일을 입력하세요">
+      </label>
+
+      <label>
+        문의 내용
+        <textarea rows="5" placeholder="문의 내용을 입력하세요"></textarea>
+      </label>
+
+      <button type="button" class="btn-primary">상담 요청</button>
+
+    </form>
+  </div>
+
+</section>
+
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-
-  <div class="footer-inner">
-
-    <div class="footer-left">
-      <p><strong>CS CENTER.</strong> 031-352-6317</p>
-      <p><strong>E-MAIL.</strong> kjsclean@naver.com</p>
-    </div>
-
-    <div class="footer-center">
-      <p><strong>OFFICE HOURS.</strong> 평일 09:00 ~ 17:00 (주말·공휴일 휴무)</p>
-      <p>점심시간 12:00 ~ 13:00</p>
-    </div>
-
-    <div class="footer-right">
-      <p><strong>LK폴리머</strong></p>
-      <p>경기도 화성시 향남읍 토성로 310-32</p>
-      <p>사업자등록번호 : 371-86-03790</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    Copyright © LK POLYMER CO., LTD. All Rights Reserved
-  </div>
-
+<footer class="footer">
+  <p>엘케이폴리머 주식회사</p>
 </footer>
 
 </body>
