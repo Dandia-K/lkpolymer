@@ -1019,3 +1019,10 @@ body {
   height: 200px !important;
   object-fit: contain !important;
 }
+
+/* ===== 인증서 PC 강제 4열 ===== */
+@media (min-width: 901px) {
+  .cert-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
