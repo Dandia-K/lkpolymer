@@ -612,3 +612,53 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== 제품소개 허브 ===== */
+.product-intro {
+  max-width: 800px;
+  margin: 80px auto 60px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 120px;
+}
+
+.product-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+  color: #0f5e34;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
