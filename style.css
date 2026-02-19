@@ -1,4 +1,6 @@
-/* ===== 기본 초기화 ===== */
+/* =========================================
+   기본 초기화
+========================================= */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +9,13 @@
 
 body {
   font-family: 'Noto Sans KR', Arial, sans-serif;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   color: #222;
 }
 
-
-/* ===== 헤더 전체 ===== */
+/* =========================================
+   HEADER
+========================================= */
 .header {
   width: 100%;
   background: #ffffff;
@@ -20,7 +23,6 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* 상단 정렬 영역 */
 .nav-top {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,12 +32,10 @@ body {
   justify-content: space-between;
 }
 
-/* ===== 로고 ===== */
 .nav-logo img {
   height: 55px;
 }
 
-/* ===== 메인 메뉴 ===== */
 .main-menu {
   list-style: none;
   display: flex;
@@ -51,11 +51,6 @@ body {
   padding-bottom: 8px;
 }
 
-/* 메뉴 hover 밑줄 */
-.main-menu li a:hover {
-  color: #0f5e34;
-}
-
 .main-menu li a::after {
   content: "";
   position: absolute;
@@ -63,7 +58,7 @@ body {
   height: 3px;
   left: 0;
   bottom: 0;
-  background-color: #0f5e34;
+  background: #0f5e34;
   transition: 0.3s;
 }
 
@@ -71,8 +66,6 @@ body {
   width: 100%;
 }
 
-
-/* ===== 헤더 하단 초록 라인 ===== */
 .header::after {
   content: "";
   display: block;
@@ -81,10 +74,9 @@ body {
   background: #0f5e34;
 }
 
-
-/* ===== 메가 메뉴 기본 숨김 ===== */
-/* ===== 메가메뉴 슬라이드 애니메이션 ===== */
-
+/* =========================================
+   MEGA MENU
+========================================= */
 .mega-menu {
   display: none;
   position: absolute;
@@ -92,991 +84,101 @@ body {
   left: 0;
   width: 100%;
   background: #ffffff;
-  border-top: 2px solid #0f5e34;
-  z-index: 999;
   border-top: 1px solid #ddd;
-
-  opacity: 0;
-  transform: translateY(-20px);
-  visibility: hidden;
-
-  transition: all 0.35s ease;
+  z-index: 999;
+  padding: 40px 0;
 }
 
-/* header에 마우스 올리면 무조건 펼침 */
-/* hover 시 */
 .header:hover .mega-menu {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
 }
-
-
 
 .mega-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 60px;
 }
 
-/* 부메뉴 제목 */
 .mega-column h4 {
-  font-size: 18px;
   margin-bottom: 18px;
   color: #0f5e34;
 }
 
-/* 부메뉴 링크 */
 .mega-column a {
   display: block;
+  margin-bottom: 10px;
   text-decoration: none;
   color: #333;
-  font-size: 16px;
-  margin-bottom: 10px;
-  transition: 0.2s;
 }
 
-.mega-column a:hover {
-  color: #0f5e34;
-}
-
-
-/* ===== 본문 ===== */
+/* =========================================
+   공통 레이아웃
+========================================= */
 .container {
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 20px;
 }
 
-.container h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.container h3 {
-  margin-top: 40px;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.container p {
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.container ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.container li {
-  margin-bottom: 8px;
-}
-
-
-/* ===== 푸터 ===== */
-.footer {
-  background: #8e8e8e;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 20px;
-  font-size: 14px;
-  margin-top: 100px;
-}
-/* ===== 페이지 제목 ===== */
 .page-title {
-  background: #f5f5f5;
-  padding: 80px 20px;
   text-align: center;
+  padding: 80px 20px;
 }
 
 .page-title h1 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-.page-title p {
-  color: #666;
-  font-size: 16px;
-}
-
-/* ===== 연혁 타임라인 ===== */
-.history {
-  max-width: 900px;
-  margin: 80px auto;
-}
-
-.history-item {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 60px;
-  align-items: flex-start;
-}
-
-.history-item .year {
-  font-size: 28px;
-  font-weight: 700;
-  color: #0f5e34;
-  min-width: 100px;
-}
-
-.history-item .content h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-}
-
-.history-item .content p {
-  margin: 0;
-  color: #555;
-}
-
-/* ===== CEO 페이지 ===== */
-.ceo-section {
-  display: flex;
-  gap: 60px;
-  margin: 100px auto;
-  align-items: flex-start;
-}
-
-.ceo-image img {
-  width: 320px;
-  border-radius: 8px;
-  background: #ddd; /* 사진 없을 때 회색 박스 */
-}
-
-.ceo-message {
-  flex: 1;
-}
-
-.ceo-message h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.ceo-message p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-  color: #444;
-}
-
-.ceo-sign {
-  margin-top: 40px;
-}
-
-.ceo-sign strong {
-  font-size: 18px;
-}
-
-/* 모바일 대응 */
-@media (max-width: 900px) {
-  .ceo-section {
-    flex-direction: column;
-  }
-
-  .ceo-image img {
-    width: 100%;
-    max-width: 400px;
-  }
-}
-
-/* ===== 오시는 길 ===== */
-.location-section {
-  display: flex;
-  gap: 60px;
-  margin: 100px auto;
-  align-items: flex-start;
-}
-
-.location-info {
-  flex: 1;
-}
-
-.location-info h3 {
-  margin-bottom: 25px;
-  font-size: 22px;
-  color: #0f5e34;
-}
-
-.location-info p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.location-map {
-  flex: 1.5;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* 모바일 대응 */
-@media (max-width: 900px) {
-  .location-section {
-    flex-direction: column;
-  }
-}
-
-/* ===== 제품 상세 ===== */
-.product-detail {
-  display: flex;
-  gap: 60px;
-  margin: 100px auto;
-  align-items: flex-start;
-}
-
-.product-image img {
-  width: 400px;
-  border-radius: 8px;
-  background: #eee;
-}
-
-.product-info {
-  flex: 1;
-}
-
-.product-info h2 {
-  margin-bottom: 20px;
-}
-
-.product-info h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.product-info ul {
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-
-/* 버튼 */
-.btn-primary {
-  display: inline-block;
-  padding: 12px 28px;
-  background: #0f5e34;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
-}
-
-/* ===== 특징 박스 ===== */
-.product-features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-bottom: 100px;
-}
-
-.feature-box {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.feature-box h4 {
-  margin-bottom: 10px;
-  color: #0f5e34;
-}
-
-/* 반응형 */
-@media (max-width: 1000px) {
-  .product-detail {
-    flex-direction: column;
-  }
-
-  .product-features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ===== 공장소개 공통 ===== */
-.factory-hero img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 60px;
-}
-
-.factory-section {
-  max-width: 1000px;
-  margin: 0 auto 100px auto;
-}
-
-.factory-section h2 {
-  margin-bottom: 20px;
-}
-
-.factory-section p {
-  margin-bottom: 25px;
-  line-height: 1.8;
-  color: #444;
-}
-
-.factory-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.factory-box {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.factory-box h4 {
-  margin-bottom: 10px;
-  color: #0f5e34;
-}
-
-@media (max-width: 900px) {
-  .factory-features {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== 인증현황 ===== */
-.cert-intro {
-  text-align: center;
-  margin: 80px auto 40px auto;
-  max-width: 800px;
-}
-
-/* ===== 인증서 썸네일 정렬 ===== */
+/* =========================================
+   인증현황 (4열 고정)
+========================================= */
 .cert-grid {
   max-width: 1200px;
   margin: 80px auto 120px auto;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* ⭐ 4개 고정 */
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-/* 카드 */
 .cert-card {
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
 .cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
 
-/* 이미지 크기 */
 .cert-card img {
   width: 100%;
-  height: 200px;       /* ⭐ 높이 통일 */
-  object-fit: contain; /* 비율 유지 */
+  height: 200px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-/* 제목 */
 .cert-card h4 {
-  font-size: 15px;
-  color: #0f5e34;
-}
-
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .cert-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* ===== FAQ ===== */
-.faq-section {
-  max-width: 800px;
-  margin: 100px auto;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.faq-question {
-  width: 100%;
-  padding: 18px;
-  text-align: left;
-  background: #f5f5f5;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.faq-answer {
-  display: none;
-  padding: 15px 18px;
-  background: #ffffff;
   font-size: 14px;
-  color: #444;
-}
-
-.faq-answer.active {
-  display: block;
-}
-
-/* ===== 상담 페이지 ===== */
-.contact-section {
-  display: flex;
-  gap: 60px;
-  margin: 100px auto;
-  align-items: flex-start;
-}
-
-.contact-info {
-  flex: 1;
-}
-
-.contact-info h2 {
-  margin-bottom: 20px;
-}
-
-.contact-info p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.contact-form-box {
-  flex: 1.5;
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .contact-section {
-    flex-direction: column;
-  }
-}
-
-/* ===== 회사소개 허브 ===== */
-.about-intro {
-  max-width: 800px;
-  margin: 80px auto 60px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 120px;
-}
-
-.about-card {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.about-card h3 {
-  margin-bottom: 10px;
   color: #0f5e34;
 }
 
-/* 반응형 */
-@media (max-width: 900px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== 제품소개 허브 ===== */
-.product-intro {
-  max-width: 800px;
-  margin: 80px auto 60px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-bottom: 120px;
-}
-
-.product-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.product-thumb img {
-  width: 100%;
-  height: 250px;
-  object-fit: contain;
-  margin-bottom: 20px;
-}
-
-.product-card h3 {
-  margin-bottom: 8px;
-  color: #0f5e34;
-}
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== 공장소개 허브 ===== */
-.factory-intro {
-  max-width: 800px;
-  margin: 80px auto 60px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.factory-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-bottom: 120px;
-}
-
-.factory-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.factory-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-
-.factory-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.factory-card h3 {
-  margin-bottom: 8px;
-  color: #0f5e34;
-}
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .factory-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== 인증현황 허브 ===== */
-.cert-intro {
-  max-width: 800px;
-  margin: 80px auto 60px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 120px;
-}
-
-.cert-card {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.cert-card h3 {
-  margin-bottom: 10px;
-  color: #0f5e34;
-}
-
-@media (max-width: 900px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* ===== 연락문의 허브 ===== */
-.contact-intro {
-  max-width: 800px;
-  margin: 80px auto 60px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-bottom: 120px;
-}
-
-.contact-card {
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-}
-
-.contact-card h3 {
-  margin-bottom: 10px;
-  color: #0f5e34;
-}
-
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===============================
-   📱 모바일 최적화
-================================ */
-
-@media (max-width: 900px) {
-
-  /* ===== 상단 메뉴 ===== */
-  .nav-top {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 0;
-  }
-
-  .main-menu {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-    align-items: center;
-  }
-
-  /* 메가메뉴 모바일에서는 숨김 */
-  .mega-menu {
-    display: none !important;
-  }
-
-  /* ===== 페이지 타이틀 ===== */
-  .page-title {
-    padding: 60px 20px 40px 20px;
-  }
-
-  .page-title h1 {
-    font-size: 24px;
-  }
-
-  .page-title p {
-    font-size: 14px;
-  }
-
-  /* ===== 카드형 레이아웃 1열로 ===== */
-  .about-grid,
-  .product-grid,
-  .factory-grid,
-  .cert-grid,
-  .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 30px;
-  }
-
-  /* 카드 padding 줄이기 */
-  .about-card,
-  .product-card,
-  .factory-card,
-  .cert-card,
-  .contact-card {
-    padding: 30px;
-  }
-
-  /* 이미지 높이 자동 */
-  .product-thumb img,
-  .factory-card img {
-    height: auto;
-  }
-
-  /* 섹션 여백 줄이기 */
-  section {
-    padding: 50px 0;
-  }
-
-  /* footer 여백 줄이기 */
-  .footer {
-    margin-top: 60px;
-    padding: 40px 20px;
-    font-size: 13px;
-  }
-/* ===== 인증서 갤러리 ===== */
-
-.cert-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin: 80px auto 120px auto;
-}
-
-.cert-item {
-  text-align: center;
-}
-
-.cert-item img {
-  width: 100%;
-  height: 320px;
-  object-fit: contain;
-  cursor: pointer;
-  background: #ffffff;
-  padding: 10px;
-  border: 1px solid #ddd;
-  transition: 0.3s;
-}
-
-.cert-item img:hover {
-  transform: scale(1.03);
-}
-
-.cert-item p {
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-/* ===== 모달창 ===== */
-
-.cert-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
-
-.cert-modal img {
-  max-width: 90%;
-  max-height: 90%;
-  background: white;
-  padding: 20px;
-}
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .cert-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* ===== 모달창 ===== */
-
-.cert-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
-
-/* 확대 이미지 */
-.cert-modal img {
-  max-width: 90%;
-  max-height: 90%;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 6px;
-}
-
-/* X 버튼 */
-.cert-close {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  font-size: 40px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.cert-close:hover {
-  transform: scale(1.2);
-}
-
-/* ===============================
-   🔥 인증서 4개 정렬 강제 적용
-================================ */
-
-.cert-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 30px !important;
-  max-width: 1200px;
-  margin: 80px auto 120px auto;
-}
-
-.cert-card {
-  padding: 20px !important;
-}
-
-.cert-card img {
-  width: 100% !important;
-  height: 200px !important;
-  object-fit: contain !important;
-}
-
-/* ===== 인증서 PC 강제 4열 ===== */
-@media (min-width: 901px) {
-  .cert-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-/* ===== 인증서 4열 강제 적용 ===== */
-.cert-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 30px !important;
-}
-
-@media (max-width: 1000px) {
-  .cert-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .cert-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* ===============================
-   인증서 확대 팝업 (고정 중앙)
-================================ */
-
+/* =========================================
+   LIGHTBOX (중앙 고정 팝업)
+========================================= */
 .lightbox {
   display: none;
-
-  position: fixed;   /* 🔥 absolute → fixed로 변경 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0,0,0,0.75);
-
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
-
   z-index: 9999;
 }
 
@@ -1087,38 +189,69 @@ body {
 .lightbox img {
   max-width: 85%;
   max-height: 85vh;
-  border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background: #fff;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 6px;
 }
 
-/* 닫기 버튼 */
 .lightbox-close {
   position: absolute;
   top: 30px;
   right: 40px;
-  font-size: 32px;
+  font-size: 36px;
   color: white;
   cursor: pointer;
 }
 
-/* 좌우 버튼 */
 .lightbox-prev,
 .lightbox-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px;
+  font-size: 45px;
   color: white;
   cursor: pointer;
   user-select: none;
 }
 
-.lightbox-prev {
-  left: 40px;
+.lightbox-prev { left: 40px; }
+.lightbox-next { right: 40px; }
+
+/* =========================================
+   FOOTER
+========================================= */
+.footer {
+  background: #8e8e8e;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-top: 100px;
 }
 
-.lightbox-next {
-  right: 40px;
+/* =========================================
+   반응형
+========================================= */
+@media (max-width: 1000px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-top {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
 }
