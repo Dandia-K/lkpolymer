@@ -319,11 +319,11 @@ body {
   background: transparent;
 }
 
-/* 메뉴 글자 흰색 */
 #header .main-menu a {
-  color: white;
-  transition: 0.3s;
+  color: #222;   /* 기본 진한 색 */
+  font-weight: 500;
 }
+
 
 /* 스크롤 후 */
 #header.scrolled {
@@ -332,5 +332,6 @@ body {
 }
 
 #header.scrolled .main-menu a {
-  color: #0f5e34;
+  color: #222;
 }
+
