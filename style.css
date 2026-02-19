@@ -1039,3 +1039,22 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
+/* ===== 인증서 4열 강제 적용 ===== */
+.cert-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px !important;
+}
+
+@media (max-width: 1000px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
