@@ -74,11 +74,20 @@
 <script>
 const menuBtn = document.getElementById("menuBtn");
 const megaMenu = document.getElementById("megaMenu");
+const overlay = document.getElementById("overlay");
 
 menuBtn.addEventListener("click", function() {
   megaMenu.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+/* 어두운 배경 클릭하면 닫힘 */
+overlay.addEventListener("click", function() {
+  megaMenu.classList.remove("active");
+  overlay.classList.remove("active");
 });
 </script>
+
 
 
 
