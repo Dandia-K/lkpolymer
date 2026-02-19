@@ -165,6 +165,59 @@ body {
   visibility: visible;
 }
 
+/* =========================================
+   DARK MODE 기본 세트
+========================================= */
+
+body {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* HEADER */
+.header {
+  background: #1b1b1b;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.menu-btn {
+  color: #e0e0e0;
+}
+
+/* MEGA MENU */
+.mega-menu {
+  background: #1e1e1e;
+  border-top: 3px solid #0f5e34;
+}
+
+.mega-column h4 {
+  color: #ffffff;
+}
+
+.mega-column a {
+  color: #bbbbbb;
+}
+
+.mega-column a:hover {
+  color: #0f5e34;
+}
+
+/* HERO */
+.hero::before {
+  background: rgba(0,0,0,0.6);   /* 더 깊은 톤 */
+}
+
+/* FOOTER */
+.footer {
+  background: #181818;
+  color: #aaaaaa;
+}
+
+.footer p:first-child {
+  color: #ffffff;
+}
+
+
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
