@@ -169,7 +169,7 @@ body {
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
 .footer {
-  background: #111;              /* 히어로 어두운 톤과 통일 */
+  background: #000;              /* 히어로 어두운 톤과 통일 */
   color: #ccc;
   text-align: center;
   padding: 80px 20px;
