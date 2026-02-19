@@ -291,3 +291,30 @@ body {
   background: white;
   color: #0a4d2e;
 }
+/* 투명 헤더 기본 상태 */
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  transition: 0.3s;
+  z-index: 1000;
+  background: transparent;
+}
+
+/* 메뉴 글자 흰색 */
+#header .main-menu a {
+  color: white;
+  transition: 0.3s;
+}
+
+/* 스크롤 후 */
+#header.scrolled {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#header.scrolled .main-menu a {
+  color: #0f5e34;
+}
