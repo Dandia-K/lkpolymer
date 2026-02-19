@@ -164,3 +164,33 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+
+/* ================= FOOTER (히어로 톤 통일) ================= */
+
+.footer {
+  background: #111;              /* 히어로 어두운 톤과 통일 */
+  color: #ccc;
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+}
+
+.footer p {
+  margin-bottom: 8px;
+}
+
+.footer p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer p:last-child {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
