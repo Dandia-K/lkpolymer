@@ -156,8 +156,9 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease;
-  z-index: 900;
+  z-index: 800;   /* 900 → 800 으로 낮춤 */
 }
+
 
 .overlay.active {
   opacity: 1;
