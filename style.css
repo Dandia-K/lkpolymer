@@ -34,14 +34,11 @@ body {
   height: 55px;
 }
 
-.main-menu {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #0f5e34;
+/* 햄버거 버튼 */
+.menu-btn {
+  font-size: 32px;
   cursor: pointer;
+  color: #0f5e34;
 }
 
 /* ================= MEGA MENU ================= */
@@ -56,6 +53,8 @@ body {
   display: none;
 }
 
+/* 햄버거 hover 시 열림 */
+.menu-btn:hover + .mega-menu,
 .header:hover .mega-menu {
   display: block;
 }
