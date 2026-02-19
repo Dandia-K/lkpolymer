@@ -316,8 +316,10 @@ body {
   padding: 20px 40px;
   transition: 0.3s;
   z-index: 1000;
-  background: transparent;
+  background: rgba(255,255,255,0.85);  /* 살짝 흰 배경 */
+  backdrop-filter: blur(5px);
 }
+
 
 #header .main-menu a {
   color: #222;   /* 기본 진한 색 */
