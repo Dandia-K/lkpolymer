@@ -257,14 +257,29 @@ body {
 }
 
 .hero {
+  position: relative;
   height: 90vh;
-  background: url('../images/main.jpg') no-repeat center/cover;
+  background: url('main.jpg') no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
 }
+
+/* 오버레이 추가 */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
 
 .hero-text h1 {
   font-size: 60px;
@@ -291,6 +306,7 @@ body {
   background: white;
   color: #0a4d2e;
 }
+
 /* 투명 헤더 기본 상태 */
 #header {
   position: fixed;
