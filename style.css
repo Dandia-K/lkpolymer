@@ -169,14 +169,18 @@ body {
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
 .footer {
-  background: rgba(0,0,0,0.4);              /* 히어로 어두운 톤과 통일 */
-  color: #ccc;
+  background: #2b2b2b;     /* 부드러운 다크그레이 */
+  color: #ddd;
   text-align: center;
   padding: 80px 20px;
   font-size: 14px;
   line-height: 1.8;
-  border-top: 1px solid rgba(255,255,255,0.1);
 }
+
+.footer p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .footer p {
