@@ -21,14 +21,14 @@
     </div>
 
     <!-- 햄버거 버튼 -->
-    <div class="menu-btn">
+    <div class="menu-btn" id="menuBtn">
       ☰
     </div>
 
   </div>
 
   <!-- ===== MEGA MENU ===== -->
-  <div class="mega-menu">
+  <div class="mega-menu" id="megaMenu">
     <div class="mega-inner">
 
       <div class="mega-column">
@@ -67,6 +67,16 @@
   </div>
 
 </nav>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const megaMenu = document.getElementById("megaMenu");
+
+menuBtn.addEventListener("click", function() {
+  megaMenu.classList.toggle("active");
+});
+</script>
+
 
 
 
