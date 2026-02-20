@@ -298,14 +298,34 @@ body {
 }
 
 .card-image {
-  flex: 1.2;           /* 이미지 더 크게 */
+  position: relative;
+  flex: 1.2;
+  overflow: hidden;
+  border-radius: 18px;
 }
 
 .card-image img {
   width: 100%;
+  display: block;
   border-radius: 18px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
 }
+
+.card-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* 왼쪽 어둡게 → 오른쪽 투명 */
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.6) 0%,
+    rgba(0,0,0,0.4) 30%,
+    rgba(0,0,0,0.0) 70%
+  );
+
+  z-index: 1;
+}
+
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
