@@ -217,10 +217,11 @@ body {
 
 /* 제목 */
 .container h1 {
-  font-size: 34px;
-  margin-bottom: 30px;
-  position: relative;
+  font-size: 38px;
+  line-height: 1.2;
+  word-break: keep-all;   /* 한국어 줄바꿈 방지 */
 }
+
 
 /* 제목 아래 포인트 라인 */
 .container h1::after {
