@@ -424,3 +424,26 @@ body.menu-open {
     font-size: 15px;
   }
 }
+
+/* ================= MOBILE BODY TEXT SIZE ================= */
+
+@media (max-width: 768px) {
+
+  .card-overlay-content h1 {
+    font-size: 28px;   /* 42px → 축소 */
+  }
+
+  .card-overlay-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .card-overlay-content .sub {
+    font-size: 15px;
+  }
+
+  .feature-item {
+    font-size: 13px;
+  }
+
+}
