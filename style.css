@@ -762,3 +762,13 @@ body {
   height: 350px;
   border-radius: 14px;
 }
+
+@media (max-width: 768px) {
+  .location-inner {
+    flex-direction: column;
+  }
+
+  .location-map iframe {
+    height: 300px;
+  }
+}
