@@ -49,3 +49,18 @@ function openModal(card) {
 function closeModal() {
   document.getElementById("certModal").classList.remove("active");
 }
+
+/* ===== 모달 배경 클릭 시 닫기 ===== */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("certModal");
+
+  if (modal) {
+    modal.addEventListener("click", function(e) {
+      // 이미지가 아닌 배경 클릭 시 닫힘
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+});
