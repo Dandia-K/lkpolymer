@@ -241,8 +241,8 @@ body {
 /* ================= FOOTER ================= */
 
 .footer {
-  background: #16261f;
-  color: #000;
+  background: #1f1f1f;
+  color: rgba(255,255,255,0.85);
   text-align: center;
   padding: 80px 20px;
   font-size: 14px;
@@ -256,6 +256,7 @@ body {
 .footer p:first-child {
   font-size: 18px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .footer p:last-child {
