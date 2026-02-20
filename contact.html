@@ -79,7 +79,7 @@
       </p>
 
       <p><strong>전화</strong><br>031-352-6317</p>
-      <p><strong>이메일</strong><br>lkpolymer@email.com</p>
+      <p><strong>이메일</strong><br>d_deav@naver.com</p>
     </div>
 
     <div class="contact-form">
@@ -116,5 +116,30 @@
 </footer>
 
 <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // 🔥 여기에 Public Key
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      company: this[0].value,
+      name: this[1].value,
+      phone: this[2].value,
+      email: this[3].value,
+      message: this[4].value
+    }).then(function() {
+      alert("문의가 성공적으로 전송되었습니다.");
+      document.getElementById("contactForm").reset();
+    }, function(error) {
+      alert("전송 실패. 다시 시도해주세요.");
+    });
+
+  });
+</script>
 </body>
 </html>
