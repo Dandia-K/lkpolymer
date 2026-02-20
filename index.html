@@ -100,6 +100,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
   
+// 모바일에서 메뉴 열릴 때 배경 스크롤 막기
+menuBtn.addEventListener("click", function() {
+  document.body.classList.toggle("menu-open");
+});
+
+overlay.addEventListener("click", function() {
+  document.body.classList.remove("menu-open");
+});
   
 </script>
 
