@@ -1044,3 +1044,74 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ================= EXTRUSION PAGE ================= */
+
+.extrusion-intro {
+  padding: 120px 20px;
+}
+
+.extrusion-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.extrusion-text {
+  flex: 1;
+}
+
+.extrusion-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.extrusion-text p {
+  line-height: 1.8;
+  color: #555;
+}
+
+.extrusion-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+}
+
+.extrusion-feature {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .extrusion-inner {
+    flex-direction: column;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
