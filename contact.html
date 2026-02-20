@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>상담요청 | LK폴리머</title>
+  <title>LK폴리머</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,133 +16,105 @@
 
     <div class="nav-logo">
       <a href="index.html">
-        <img src="logo.jpg" alt="LK폴리머 로고">
+        <img src="logo.png" alt="LK폴리머 로고">
       </a>
     </div>
 
-    <ul class="main-menu">
-      <li><a href="about.html">회사소개</a></li>
-      <li><a href="products.html">제품소개</a></li>
-      <li><a href="factory.html">공장소개</a></li>
-      <li><a href="certificates.html">인증현황</a></li>
-      <li><a href="contact-main.html">연락문의</a></li>
-    </ul>
-
+    <!-- 햄버거 버튼 -->
+    <div class="menu-btn" id="menuBtn">☰</div>
   </div>
 
-  <!-- 메가 메뉴 -->
-  <div class="mega-menu">
-    <div class="mega-inner">
+  <!-- ===== MEGA MENU ===== -->
+  <div class="mega-menu" id="megaMenu">
+<div class="mega-inner">
 
-      <div class="mega-column">
-        <h4>회사소개</h4>
-        <a href="history.html">연혁</a>
-        <a href="ceo.html">CEO 인사말</a>
-        <a href="location.html">오시는 길</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="about.html">회사소개</a></h4>
+  <a href="history.html">연혁</a>
+  <a href="ceo.html">CEO 인사말</a>
+  <a href="location.html">오시는 길</a>
+</div>
 
-      <div class="mega-column">
-        <h4>제품소개</h4>
-        <a href="spgb.html">종량제봉투</a>
-        <a href="plasticbag.html">일반봉투</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="products.html">제품소개</a></h4>
+  <a href="spgb.html">종량제봉투</a>
+  <a href="plasticbag.html">일반봉투</a>
+</div>
 
-      <div class="mega-column">
-        <h4>공장소개</h4>
-        <a href="extrusion.html">압출시설</a>
-        <a href="printing.html">인쇄시설</a>
-        <a href="foundation.html">가공시설</a>
-        <a href="factoryect.html">기타</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="factory.html">공장소개</a></h4>
+  <a href="extrusion.html">압출시설</a>
+  <a href="printing.html">인쇄시설</a>
+  <a href="foundation.html">가공시설</a>
+</div>
 
-      <div class="mega-column">
-        <h4>인증현황</h4>
-        <a href="certificates.html">인증서</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="certificates.html">인증현황</a></h4>
+  <a href="certificates.html">인증서</a>
+</div>
 
-      <div class="mega-column">
-        <h4>연락문의</h4>
-        <a href="question.html">자주찾는질문</a>
-        <a href="contact.html">상담요청</a>
-      </div>
-
+<div class="mega-column">
+  <h4><a href="contact-main.html">연락문의</a></h4>
+  <a href="question.html">자주찾는질문</a>
+  <a href="contact.html">상담요청</a>
+</div>
     </div>
   </div>
-
 </nav>
 
-<!-- ===== PAGE TITLE ===== -->
-<section class="page-title">
-  <h1>상담요청</h1>
-  <p>제품 문의 및 견적 상담</p>
+<div class="overlay" id="overlay"></div>
+
+<section class="sub-hero">
+  <h1>연락문의</h1>
 </section>
 
-<!-- ===== CONTACT SECTION ===== -->
-<section class="container contact-section">
+<section class="contact-section">
+  <div class="contact-inner">
 
-  <!-- 안내 영역 -->
-  <div class="contact-info">
-    <h2>문의 안내</h2>
-    <p>
-      제품 관련 문의 및 견적 요청은<br>
-      아래 상담 요청서를 작성해 주시기 바랍니다.
-    </p>
+    <div class="contact-info">
+      <h2>문의 안내</h2>
+      <p>
+        제품 및 생산 관련 문의는 아래 양식을 통해 접수해 주세요.
+        담당자가 빠르게 연락드리겠습니다.
+      </p>
 
-    <p>
-      <strong>전화</strong><br>
-      031-352-6317
-    </p>
+      <p><strong>전화</strong><br>031-352-6317</p>
+      <p><strong>이메일</strong><br>lkpolymer@email.com</p>
+    </div>
 
-    <p>
-      <strong>이메일</strong><br>
-      kjsclean@naver.com
-    </p>
+    <div class="contact-form">
+      <form>
 
-    <p style="margin-top:30px; font-size:14px; color:#777;">
-      ※ 현재 홈페이지는 이메일 및 전화 상담을 통해 접수받고 있습니다.
-    </p>
+        <input type="text" placeholder="회사명" required>
+        <input type="text" placeholder="담당자명" required>
+        <input type="tel" placeholder="연락처" required>
+        <input type="email" placeholder="이메일" required>
+
+        <textarea rows="6" placeholder="문의 내용을 입력해주세요." required></textarea>
+
+        <button type="submit">문의 보내기</button>
+
+      </form>
+    </div>
+
   </div>
-
-  <!-- 폼 영역 -->
-  <div class="contact-form-box">
-    <form class="contact-form">
-
-      <label>
-        회사명
-        <input type="text" placeholder="회사명을 입력하세요">
-      </label>
-
-      <label>
-        담당자명
-        <input type="text" placeholder="담당자명을 입력하세요">
-      </label>
-
-      <label>
-        연락처
-        <input type="text" placeholder="연락처를 입력하세요">
-      </label>
-
-      <label>
-        이메일
-        <input type="email" placeholder="이메일을 입력하세요">
-      </label>
-
-      <label>
-        문의 내용
-        <textarea rows="5" placeholder="문의 내용을 입력하세요"></textarea>
-      </label>
-
-      <button type="button" class="btn-primary">상담 요청</button>
-
-    </form>
-  </div>
-
 </section>
 
+  
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
+
   <p>엘케이폴리머 주식회사</p>
+  <p>대표이사 : 김지수</p>
+  <p>경기도 화성시 향남읍 토성로 310-32</p>
+  <p>사업자등록번호 : 381-86-03790</p>
+  <br>
+  <p>OFFICE HOURS. 평일 09:00 ~ 17:00 (공휴일 휴무)</p>
+  <br>
+  <p>Copyright © LK POLYMER CO., LTD. All Rights Reserved</p>
+
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
