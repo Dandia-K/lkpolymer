@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>제품소개 | LK폴리머</title>
+  <title>LK폴리머</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,96 +16,82 @@
 
     <div class="nav-logo">
       <a href="index.html">
-        <img src="logo.jpg" alt="LK폴리머 로고">
+        <img src="logo.png" alt="LK폴리머 로고">
       </a>
     </div>
 
-    <ul class="main-menu">
-      <li><a href="about.html">회사소개</a></li>
-      <li><a href="products.html">제품소개</a></li>
-      <li><a href="factory.html">공장소개</a></li>
-      <li><a href="certificates.html">인증현황</a></li>
-      <li><a href="contact-main.html">연락문의</a></li>
-    </ul>
-
+    <!-- 햄버거 버튼 -->
+    <div class="menu-btn" id="menuBtn">☰</div>
   </div>
 
-  <!-- 메가 메뉴 -->
-  <div class="mega-menu">
-    <div class="mega-inner">
+  <!-- ===== MEGA MENU ===== -->
+  <div class="mega-menu" id="megaMenu">
+<div class="mega-inner">
 
-      <div class="mega-column">
-        <h4>회사소개</h4>
-        <a href="history.html">연혁</a>
-        <a href="ceo.html">CEO 인사말</a>
-        <a href="location.html">오시는 길</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="about.html">회사소개</a></h4>
+  <a href="history.html">연혁</a>
+  <a href="ceo.html">CEO 인사말</a>
+  <a href="location.html">오시는 길</a>
+</div>
 
-      <div class="mega-column">
-        <h4>제품소개</h4>
-        <a href="spgb.html">종량제봉투</a>
-        <a href="plasticbag.html">일반봉투</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="products.html">제품소개</a></h4>
+  <a href="spgb.html">종량제봉투</a>
+  <a href="plasticbag.html">일반봉투</a>
+</div>
 
-      <div class="mega-column">
-        <h4>공장소개</h4>
-        <a href="extrusion.html">압출시설</a>
-        <a href="printing.html">인쇄시설</a>
-        <a href="foundation.html">가공시설</a>
-        <a href="factoryect.html">기타</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="factory.html">공장소개</a></h4>
+  <a href="extrusion.html">압출시설</a>
+  <a href="printing.html">인쇄시설</a>
+  <a href="foundation.html">가공시설</a>
+</div>
 
-      <div class="mega-column">
-        <h4>인증현황</h4>
-        <a href="certificates.html">인증서</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="certificates.html">인증현황</a></h4>
+  <a href="certificates.html">인증서</a>
+</div>
 
-      <div class="mega-column">
-        <h4>연락문의</h4>
-        <a href="question.html">자주찾는질문</a>
-        <a href="contact.html">상담요청</a>
-      </div>
-
+<div class="mega-column">
+  <h4><a href="contact.html">연락문의</a></h4>
+  <a href="question.html">자주찾는질문</a>
+  <a href="contact.html">상담요청</a>
+</div>
     </div>
   </div>
-
 </nav>
 
-<!-- ===== PAGE TITLE ===== -->
-<section class="page-title">
+<div class="overlay" id="overlay"></div>
+
+<section class="sub-hero">
   <h1>제품소개</h1>
-  <p>LK폴리머 주요 생산 제품</p>
 </section>
 
-<!-- ===== INTRO ===== -->
-<section class="container product-intro">
-  <p>
-    LK폴리머는 종량제봉투 및 다양한 일반 봉투를
-    전문적으로 제조하고 있습니다.
-    안정적인 생산 시스템과 품질 관리를 통해
-    고객의 요구에 맞는 제품을 제공합니다.
-  </p>
-</section>
+<section class="products-section">
+  <div class="products-inner">
 
-<!-- ===== PRODUCT CARDS ===== -->
-<section class="container product-grid">
+    <a href="spgb.html" class="product-card">
+      <div class="product-image">
+        <img src="spgb.jpg" alt="종량제봉투">
+      </div>
+      <div class="product-text">
+        <h3>종량제봉투</h3>
+        <p>지자체 규격 100% 준수 제품</p>
+      </div>
+    </a>
 
-  <a href="spgb.html" class="product-card">
-    <div class="product-thumb">
-      <img src="spgb.jpg" alt="종량제봉투">
-    </div>
-    <h3>종량제봉투</h3>
-    <p>지자체 규격 기준 생산</p>
-  </a>
+    <a href="plasticbag.html" class="product-card">
+      <div class="product-image">
+        <img src="plasticbag.jpg" alt="일반봉투">
+      </div>
+      <div class="product-text">
+        <h3>일반봉투</h3>
+        <p>다양한 사이즈 맞춤 제작</p>
+      </div>
+    </a>
 
-  <a href="plasticbag.html" class="product-card">
-    <div class="product-thumb">
-      <img src="plasticbag.jpg" alt="일반봉투">
-    </div>
-    <h3>일반봉투</h3>
-    <p>생활용 / 산업용 맞춤 생산</p>
-  </a>
-
+  </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -122,5 +108,6 @@
 
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
