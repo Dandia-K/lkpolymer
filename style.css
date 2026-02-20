@@ -650,7 +650,7 @@ body {
 }
 
 .ceo-image {
-  flex: 1;
+  flex: 0.7;   /* 1 → 0.7 */
 }
 
 .ceo-image img {
@@ -660,7 +660,7 @@ body {
 }
 
 .ceo-message {
-  flex: 1.2;
+  flex: 1.3;
 }
 
 .ceo-message h2 {
