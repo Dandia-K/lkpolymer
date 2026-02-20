@@ -198,6 +198,21 @@ body {
   transform: translateY(-2px);
 }
 
+.sub-hero {
+  margin-top: 90px;
+  height: 220px;
+  background: #1f332b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.sub-hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 /* ================= PREMIUM OVERLAY CARD ================= */
 
 .premium-card {
