@@ -318,7 +318,6 @@ body {
   margin-bottom: 10px;
   color: #0f5e34;
 }
-
 /* ================= ABOUT TITLE REFINEMENT ================= */
 
 .container h1 {
@@ -555,4 +554,14 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* ================= PREMIUM CARD TEXT WHITE ================= */
+
+.premium-card .card-overlay-content,
+.premium-card .card-overlay-content h1,
+.premium-card .card-overlay-content p,
+.premium-card .card-overlay-content .sub,
+.premium-card .card-overlay-content .feature-item {
+  color: #ffffff !important;
 }
