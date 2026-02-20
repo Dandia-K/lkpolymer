@@ -61,11 +61,8 @@
   <a href="question.html">자주찾는질문</a>
   <a href="contact.html">상담요청</a>
 </div>
-
-
-</div>
-
-
+    </div>
+  </div>
 </nav>
 
 <div class="overlay" id="overlay"></div>
@@ -86,6 +83,24 @@ overlay.addEventListener("click", function() {
   megaMenu.classList.remove("active");
   overlay.classList.remove("active");
 });
+
+  /* ================= 자동 active 메뉴 ================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
+
+  const menuLinks = document.querySelectorAll(".mega-menu a");
+
+  menuLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+  
+  
 </script>
 
 
@@ -101,10 +116,7 @@ overlay.addEventListener("click", function() {
     <p>종량제봉투 및 쓰레기봉투 전문 제조기업</p>
     <a href="products.html" class="btn">제품 보러가기</a>
   </div>
-
 </section>
-
-
 
   <!-- ===== 회사 소개 요약 ===== -->
 <div class="container premium-card">
@@ -136,8 +148,6 @@ overlay.addEventListener("click", function() {
 </div>
 
 
-</section>
-
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
@@ -154,6 +164,5 @@ overlay.addEventListener("click", function() {
 </footer>
 
 <script src="main.js"></script>
-  
 </body>
 </html>
