@@ -1158,7 +1158,7 @@ body {
 
 .certificate-card img {
   width: 100%;
-  aspect-ratio: 3 / 4;   /* 🔥 세로형 비율 */
+aspect-ratio: 2 / 3;
   object-fit: cover;
 }
 
