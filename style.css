@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -34,65 +35,22 @@ body {
   height: 55px;
 }
 
-/* 햄버거 버튼 */
 .menu-btn {
   font-size: 32px;
   cursor: pointer;
   color: #0f5e34;
 }
 
-/* ================= 가로형 메가메뉴 ================= */
-
-.mega-inner {
-  max-width: 1000px;        /* 1200 → 1100으로 줄임 */
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;  /* 가운데로 모음 */
-  gap: 80px;                /* 컬럼 사이 간격 */
-  padding: 60px 20px;
-}
-
-
-/* 컬럼 */
-.mega-column {
-  text-align: center;   /* 핵심 */
-  min-width: 140px;
-}
-
-
-/* 제목 */
-.mega-column h4 {
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: #111;
-}
-
-/* 링크 */
-.mega-column a {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #555;
-  transition: 0.3s;
-}
-
-.mega-column a:hover {
-  color: #0f5e34;
-  transform: translateX(4px);
-}
-
+/* ================= MEGA MENU ================= */
 
 .mega-menu {
   position: fixed;
-  top: 90px;              /* 헤더 높이 */
+  top: 90px;
   left: 0;
   width: 100%;
   background: #ffffff;
   border-top: 3px solid #0f5e34;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
@@ -101,6 +59,27 @@ body {
 
 .mega-menu.active {
   max-height: 600px;
+}
+
+.mega-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+}
+
+.mega-column {
+  text-align: center;
+  min-width: 140px;
+}
+
+.mega-column h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #111;
 }
 
 .mega-column h4::after {
@@ -112,7 +91,20 @@ body {
   margin: 10px auto 0;
 }
 
-/* ================= HERO ================= */
+.mega-column a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.mega-column a:hover {
+  color: #0f5e34;
+}
+
+/* ================= HERO VIDEO ================= */
 
 .hero {
   margin-top: 90px;
@@ -125,7 +117,6 @@ body {
   color: white;
 }
 
-/* 영상 */
 .hero-video {
   position: absolute;
   top: 50%;
@@ -137,7 +128,6 @@ body {
   z-index: 0;
 }
 
-/* 어두운 오버레이 */
 .hero::before {
   content: "";
   position: absolute;
@@ -146,7 +136,6 @@ body {
   z-index: 1;
 }
 
-/* 텍스트는 위로 */
 .hero-text {
   position: relative;
   z-index: 2;
@@ -163,14 +152,14 @@ body {
   font-size: 20px;
 }
 
-/* ================= HERO BUTTON ================= */
+/* HERO BUTTON */
 
 .btn {
   display: inline-block;
   margin-top: 30px;
   padding: 14px 36px;
   border: 2px solid #ffffff;
-  color: #ffffff;        /* 흰색 글씨 */
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
@@ -179,153 +168,10 @@ body {
 
 .btn:hover {
   background: #ffffff;
-  color: #111;           /* hover 시 어두운 글씨 */
+  color: #111;
 }
 
-/* ================= OVERLAY ================= */
-
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease;
-  z-index: 800;   /* 900 → 800 으로 낮춤 */
-}
-
-
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-/* ========================== 본문 ========================== */
-
-/* ================= 본문 카드형 ================= */
-
-.container {
-  max-width: 900px;
-  margin: 140px auto;
-  padding: 60px 60px;        /* 안쪽 여백 */
-
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-/* 제목 */
-.container h1 {
-  font-size: 38px;
-  line-height: 1.2;
-  word-break: keep-all;   /* 한국어 줄바꿈 방지 */
-}
-
-
-/* 제목 아래 포인트 라인 */
-.container h1::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #0f5e34;
-  margin-top: 15px;
-}
-
-/* 본문 텍스트 */
-.container p {
-  line-height: 1.8;
-  color: #444;
-}
-
-/* ================= 카드 아이콘 리스트 ================= */
-
-.feature-list {
-  margin-top: 30px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 18px;
-}
-
-.feature-icon {
-  width: 30px;
-  height: 30px;
-  background: #0f5e34;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.feature-item p {
-  margin: 0;
-  font-size: 15px;
-  color: #444;
-}
-
-/* ================= 프리미엄 2단 레이아웃 ================= */
-
-.card-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;          /* 여백 크게 */
-}
-
-.card-text {
-  flex: 1;
-}
-
-.card-text h1 {
-  font-size: 42px;     /* 더 시원하게 */
-  line-height: 1.2;
-  margin-bottom: 30px;
-  word-break: keep-all;
-}
-
-.card-text p {
-  font-size: 16px;
-  line-height: 1.9;
-  color: #555;
-}
-
-.card-image {
-  position: relative;
-  flex: 1.2;
-  overflow: hidden;
-  border-radius: 18px;
-}
-
-.card-image img {
-  width: 100%;
-  display: block;
-  border-radius: 18px;
-}
-
-.card-image::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  /* 왼쪽 어둡게 → 오른쪽 투명 */
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.6) 0%,
-    rgba(0,0,0,0.4) 30%,
-    rgba(0,0,0,0.0) 70%
-  );
-
-  z-index: 1;
-}
-/* ================= 프리미엄 오버레이 카드 ================= */
+/* ================= PREMIUM OVERLAY CARD ================= */
 
 .premium-card {
   position: relative;
@@ -335,7 +181,6 @@ body {
   overflow: hidden;
 }
 
-/* 배경 이미지 */
 .card-bg img {
   width: 100%;
   height: 600px;
@@ -343,7 +188,6 @@ body {
   display: block;
 }
 
-/* 왼쪽 어두운 그라데이션 */
 .premium-card::before {
   content: "";
   position: absolute;
@@ -357,7 +201,6 @@ body {
   z-index: 1;
 }
 
-/* 텍스트 영역 */
 .card-overlay-content {
   position: absolute;
   top: 50%;
@@ -365,8 +208,7 @@ body {
   transform: translateY(-50%);
   z-index: 2;
   max-width: 450px;
-  color: rgba(255,255,255,0.9);
-   /* 🔥 핵심 */
+  color: #ffffff;
 }
 
 .card-overlay-content h1 {
@@ -374,40 +216,37 @@ body {
   margin-bottom: 20px;
 }
 
+.card-overlay-content p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: rgba(255,255,255,0.9);
+}
+
 .card-overlay-content .sub {
   font-weight: 600;
-  margin-bottom: 20px;
+}
+
+/* ================= FEATURE LIST ================= */
+
+.feature-list {
+  margin-top: 20px;
 }
 
 .feature-item {
   margin-bottom: 12px;
   font-size: 15px;
+  color: rgba(255,255,255,0.9);
 }
 
-/* ================= 오버레이 텍스트 색상 강제 적용 ================= */
-
-.premium-card .card-overlay-content,
-.premium-card .card-overlay-content p,
-.premium-card .card-overlay-content .sub,
-.premium-card .card-overlay-content .feature-item {
-  color: #ffffff !important;
-}
-
-/* ================= FOOTER (히어로 톤 통일) ================= */
+/* ================= FOOTER ================= */
 
 .footer {
-  background: rgba(0, 0, 0, 0.16);     /* 부드러운 다크그레이 */
-  color: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.16);
+  color: #000;
   text-align: center;
   padding: 80px 20px;
   font-size: 14px;
   line-height: 1.8;
-}
-
-.footer p:first-child {
-  font-size: 18px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 1);
 }
 
 .footer p {
@@ -417,11 +256,9 @@ body {
 .footer p:first-child {
   font-size: 18px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 1);
 }
 
 .footer p:last-child {
   margin-top: 20px;
   font-size: 13px;
-  color: rgba(0, 0, 0, 1);
 }
