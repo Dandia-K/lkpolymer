@@ -17,3 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+function changeImage(element) {
+  const main = document.getElementById("mainProductImage");
+  if (main) {
+    main.src = element.src;
+  }
+}
