@@ -331,3 +331,6 @@ body {
     z-index: 850;
   }
 }
+body.menu-open {
+  overflow: hidden;
+}
