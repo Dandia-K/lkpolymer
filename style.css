@@ -565,3 +565,54 @@ body {
 .premium-card .card-overlay-content .feature-item {
   color: #ffffff !important;
 }
+
+/* ================= HISTORY TIMELINE ================= */
+
+.history-section {
+  padding: 120px 20px;
+  background: #f8f8f8;
+}
+
+.history-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 세로 라인 */
+.history-inner::before {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #0f5e34;
+}
+
+.history-item {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.history-year {
+  width: 120px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f5e34;
+}
+
+.history-content {
+  padding-left: 40px;
+}
+
+.history-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.history-content p {
+  color: #555;
+  line-height: 1.7;
+}
