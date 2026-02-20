@@ -686,6 +686,25 @@ body {
   opacity: 0.9;
 }
 
+/* ================= CEO SIGN INLINE ================= */
+
+.ceo-sign {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ceo-name {
+  font-weight: 600;
+  color: #0f5e34;
+}
+
+.signature-img {
+  height: 50px;
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
 
   .ceo-inner {
