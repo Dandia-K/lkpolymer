@@ -165,65 +165,12 @@ body {
   visibility: visible;
 }
 
-/* =========================================
-   Modern Grey Light Mode (최종 추천)
-========================================= */
-
-body {
-  background: #f4f5f7;   /* 밝은 그레이 */
-  color: #222;
-}
-
-/* HEADER */
-.header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.menu-btn {
-  color: #222;
-}
-
-/* MEGA MENU */
-.mega-menu {
-  background: #ffffff;
-  border-top: 3px solid #0f5e34;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-.mega-column h4 {
-  color: #111;
-}
-
-.mega-column a {
-  color: #555;
-}
-
-.mega-column a:hover {
-  color: #0f5e34;
-}
-
-/* HERO 오버레이 최소화 */
-.hero::before {
-  background: rgba(0,0,0,0.3);
-}
-
-/* FOOTER */
-.footer {
-  background: #2e2e2e;
-  color: #cccccc;
-}
-
-.footer p:first-child {
-  color: #ffffff;
-}
-
 
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
 .footer {
-  background: #2b2b2b;     /* 부드러운 다크그레이 */
+  background: rgba(0, 0, 0, 0.16);     /* 부드러운 다크그레이 */
   color: #ddd;
   text-align: center;
   padding: 80px 20px;
