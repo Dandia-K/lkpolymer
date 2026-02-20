@@ -41,117 +41,32 @@ body {
   color: #0f5e34;
 }
 
-/* ================= MEGA MENU 고급형 ================= */
-
-.mega-menu {
-  position: fixed;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  background: white;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  border-top: 4px solid #0f5e34;
-
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.mega-menu.active {
-  max-height: 700px;
-}
+/* ================= 가로형 메가메뉴 ================= */
 
 .mega-inner {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 60px 20px;
 }
 
-/* 컬럼 제목 */
-.mega-column h4 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #0f5e34;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-/* 제목 밑에 라인 */
-.mega-column h4::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #0f5e34;
-  margin-top: 8px;
-}
-
-/* 링크 */
-.mega-column a {
-  display: block;
-  font-size: 15px;
-  color: #555;
-  text-decoration: none;
-  margin-bottom: 12px;
-  transition: all 0.3s ease;
-}
-
-/* hover 효과 */
-.mega-column a:hover {
-  color: #0f5e34;
-  transform: translateX(5px);
-}
-
-
-/* HERO 밀림 방지 */
-.hero {
-  margin-top: 90px;
-}
-
-/* ================= MEGA MENU 구조 업그레이드 ================= */
-
-.mega-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding: 70px 20px;
-  gap: 80px;
-}
-
-/* 왼쪽 영역 */
-.mega-left {
+/* 각 컬럼 */
+.mega-column {
   flex: 1;
+  min-width: 150px;
 }
 
-.mega-left h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #0f5e34;
-}
-
-.mega-left p {
-  font-size: 15px;
-  color: #666;
-  line-height: 1.6;
-}
-
-/* 오른쪽 영역 */
-.mega-right {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 컬럼 */
+/* 제목 */
 .mega-column h4 {
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 700;
+  color: #111;
 }
 
+/* 링크 */
 .mega-column a {
   display: block;
   font-size: 14px;
