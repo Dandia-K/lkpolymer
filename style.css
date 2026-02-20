@@ -675,9 +675,15 @@ body {
 }
 
 .ceo-sign {
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: 600;
   color: #0f5e34;
+}
+
+.signature-img {
+  margin-top: 10px;
+  height: 60px;
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
