@@ -34,3 +34,18 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
+/* ================= CERTIFICATE MODAL ================= */
+
+function openModal(card) {
+  const img = card.querySelector("img");
+  const modal = document.getElementById("certModal");
+  const modalImg = document.getElementById("certModalImg");
+
+  modalImg.src = img.src;
+  modal.classList.add("active");
+}
+
+function closeModal() {
+  document.getElementById("certModal").classList.remove("active");
+}
