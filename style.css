@@ -298,9 +298,15 @@ body {
     width: 100%;
     height: 100vh;
     background: #111;
+
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+    padding-top: 120px;
+
+    overflow-y: scroll;     /* auto → scroll 로 변경 */
+    overscroll-behavior: contain;
 
     opacity: 0;
     pointer-events: none;
@@ -315,7 +321,8 @@ body {
   .mega-inner {
     flex-direction: column;
     gap: 50px;
-    padding: 0;
+    padding-bottom: 120px;   /* 여백 조금 더 */
+    width: 100%;
   }
 
   .mega-column {
@@ -339,4 +346,10 @@ body {
   .overlay {
     display: none; /* 앱 느낌이라 오버레이 제거 */
   }
+}
+
+/* ================= 모바일 스크롤 제어 ================= */
+
+body.menu-open {
+  overflow: hidden;
 }
