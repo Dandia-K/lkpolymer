@@ -340,7 +340,3 @@ body {
     display: none; /* 앱 느낌이라 오버레이 제거 */
   }
 }
-
-body.menu-open {
-  overflow: hidden;
-}
