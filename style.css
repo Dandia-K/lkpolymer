@@ -394,3 +394,33 @@ body.menu-open {
     }
   }
 }
+
+/* ================= MOBILE HERO OPTIMIZE ================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 70vh;                 /* 90vh → 70vh */
+    padding: 0 20px;
+  }
+
+  .hero::before {
+    background: rgba(0,0,0,0.5);   /* 살짝 더 어둡게 */
+  }
+
+  .hero-text h1 {
+    font-size: 34px;               /* 60px → 축소 */
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
