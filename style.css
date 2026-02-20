@@ -286,3 +286,48 @@ body {
   font-size: 13px;
   color: rgba(255,255,255,0.7);
 }
+
+/* ================= MOBILE MENU ================= */
+
+@media (max-width: 768px) {
+
+  .mega-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #ffffff;
+    border-top: none;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    padding-top: 100px;
+  }
+
+  .mega-menu.active {
+    left: 0;
+  }
+
+  .mega-inner {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .mega-column {
+    text-align: left;
+  }
+
+  .mega-column h4 {
+    font-size: 18px;
+  }
+
+  .mega-column a {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .overlay {
+    z-index: 850;
+  }
+}
