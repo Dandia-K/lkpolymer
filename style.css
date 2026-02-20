@@ -170,7 +170,7 @@ body {
 
 
 .container {
-  max-width: 800px;      /* 너무 넓지 않게 */
+  max-width: 500px;      /* 너무 넓지 않게 */
   margin: 120px auto;     /* 위아래 여백 + 가운데 정렬 */
   padding: 0 40px;        /* 좌우 여백 */
 }
