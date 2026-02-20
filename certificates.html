@@ -81,25 +81,25 @@
 
 <section class="certificate-grid">
 
-  <div class="certificate-card">
+  <div class="certificate-card" onclick="openModal(this)">
     <img src="cert1.jpg" alt="단체표준인증서">
     <h3>단체표준인증서</h3>
     <p>HDPE, LLDPE</p>
   </div>
 
-  <div class="certificate-card">
+  <div class="certificate-card" onclick="openModal(this)">
     <img src="cert2.jpg" alt="환경 인증서">
     <h3>단체표준인증서</h3>
     <p>탄산칼슘함유봉투</p>
   </div>
 
-  <div class="certificate-card">
+  <div class="certificate-card" onclick="openModal(this)">
     <img src="cert3.jpg" alt="기타 인증서">
     <h3>단체표준인증서</h3>
     <p>재사용전용봉투</p>
   </div>
 
-  <div class="certificate-card">
+  <div class="certificate-card" onclick="openModal(this)">
     <img src="cert4.jpg" alt="기타 인증서">
     <h3>단체표준인증서</h3>
     <p>음식물전용봉투</p>
@@ -107,7 +107,11 @@
   
 </section>
 
-
+<!-- ===== CERTIFICATE MODAL ===== -->
+<div class="cert-modal" id="certModal">
+  <span class="cert-close" onclick="closeModal()">×</span>
+  <img id="certModalImg">
+</div>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
