@@ -66,76 +66,25 @@
 </nav>
 
 <div class="overlay" id="overlay"></div>
-
   
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const megaMenu = document.getElementById("megaMenu");
-const overlay = document.getElementById("overlay");
-
-menuBtn.addEventListener("click", function() {
-  megaMenu.classList.toggle("active");
-  overlay.classList.toggle("active");
-});
-
-/* 어두운 배경 클릭하면 닫힘 */
-overlay.addEventListener("click", function() {
-  megaMenu.classList.remove("active");
-  overlay.classList.remove("active");
-});
-
-  /* ================= 자동 active 메뉴 ================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname.split("/").pop();
-
-  const menuLinks = document.querySelectorAll(".mega-menu a");
-
-  menuLinks.forEach(link => {
-    const linkPage = link.getAttribute("href");
-
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-});
-  
-menuBtn.addEventListener("click", function() {
-  document.body.classList.toggle("menu-open");
-});
-
-document.addEventListener("click", function(e) {
-  if (megaMenu.classList.contains("active") && !megaMenu.contains(e.target) && e.target !== menuBtn) {
-    megaMenu.classList.remove("active");
-    menuBtn.textContent = "☰";
-    document.body.classList.remove("menu-open");
-  }
-});
-
-</script>
-
-
-<hr>
-
-
-
-<hr>
-
-<div class="container">
+<section class="sub-hero">
   <h1>회사소개</h1>
+</section>
+  
+<section class="about-intro">
+  <div class="inner">
+    <h2>LK폴리머</h2>
 
-  <p><strong>LK폴리머</strong>는 2025년에 설립된 종량제봉투 및 쓰레기봉투 전문 제조업체입니다.</p>
+    <p class="lead">
+      2025년에 설립된 종량제봉투 전문 제조업체
+    </p>
 
-  <p>
-    철저한 품질 관리를 바탕으로 안정적인 제품 생산을 지향하며,
-    약속된 납기를 준수하는 것을 가장 중요한 가치로 삼고 있습니다.
-  </p>
-
-  <p>
-    신뢰할 수 있는 생산 파트너가 되기 위해
-    지속적으로 노력하고 있습니다.
-  </p>
-</div>
+    <p>
+      철저한 품질 관리와 안정적인 생산 시스템을 기반으로
+      신뢰받는 생산 파트너가 되기 위해 노력하고 있습니다.
+    </p>
+  </div>
+</section>
 
 <section class="container about-grid">
 
