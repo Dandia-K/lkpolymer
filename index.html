@@ -64,54 +64,6 @@
 
 <div class="overlay" id="overlay"></div>
 
-  
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const megaMenu = document.getElementById("megaMenu");
-const overlay = document.getElementById("overlay");
-
-menuBtn.addEventListener("click", function() {
-  megaMenu.classList.toggle("active");
-  overlay.classList.toggle("active");
-});
-
-/* 어두운 배경 클릭하면 닫힘 */
-overlay.addEventListener("click", function() {
-  megaMenu.classList.remove("active");
-  overlay.classList.remove("active");
-});
-
-  /* ================= 자동 active 메뉴 ================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname.split("/").pop();
-
-  const menuLinks = document.querySelectorAll(".mega-menu a");
-
-  menuLinks.forEach(link => {
-    const linkPage = link.getAttribute("href");
-
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-});
-  
-menuBtn.addEventListener("click", function() {
-  document.body.classList.toggle("menu-open");
-});
-
-document.addEventListener("click", function(e) {
-  if (megaMenu.classList.contains("active") && !megaMenu.contains(e.target) && e.target !== menuBtn) {
-    megaMenu.classList.remove("active");
-    menuBtn.textContent = "☰";
-    document.body.classList.remove("menu-open");
-  }
-});
-
-</script>
-
-
 
 <section class="hero">
 
