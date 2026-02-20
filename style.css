@@ -247,9 +247,10 @@ body {
   flex: 1;
 }
 
-.card-image {
-  flex: 1;
+.card-image img {
+  transform: translateY(20px);
 }
+
 
 .card-image img {
   width: 100%;
