@@ -238,10 +238,10 @@ body {
   color: rgba(255,255,255,0.9);
 }
 
-/* ================= FOOTER ================= */
+/* ================= FOOTER - Brand Dark Green ================= */
 
 .footer {
-  background: #1f1f1f;
+  background: #16261f;
   color: rgba(255,255,255,0.85);
   text-align: center;
   padding: 80px 20px;
@@ -262,4 +262,5 @@ body {
 .footer p:last-child {
   margin-top: 20px;
   font-size: 13px;
+  color: rgba(255,255,255,0.6);
 }
