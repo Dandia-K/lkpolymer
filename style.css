@@ -166,27 +166,27 @@ body {
 }
 
 /* =========================================
-   밝은 다크모드 v2 (추천 밸런스)
+   Soft Dark Mode (밝은 모던 그레이)
 ========================================= */
 
 body {
-  background: #262626;   /* 더 밝게 */
-  color: #f0f0f0;
+  background: #2f2f2f;   /* 훨씬 밝음 */
+  color: #f5f5f5;
 }
 
 /* HEADER */
 .header {
-  background: #2e2e2e;
-  border-bottom: 1px solid #3a3a3a;
+  background: #383838;
+  border-bottom: 1px solid #444;
 }
 
 .menu-btn {
-  color: #f0f0f0;
+  color: #f5f5f5;
 }
 
 /* MEGA MENU */
 .mega-menu {
-  background: #333333;
+  background: #404040;
   border-top: 3px solid #0f5e34;
 }
 
@@ -195,22 +195,22 @@ body {
 }
 
 .mega-column a {
-  color: #dddddd;
+  color: #e5e5e5;
 }
 
 .mega-column a:hover {
   color: #0f5e34;
 }
 
-/* HERO 오버레이 더 부드럽게 */
+/* HERO 오버레이 더 줄임 */
 .hero::before {
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.25);
 }
 
 /* FOOTER */
 .footer {
-  background: #2a2a2a;
-  color: #cccccc;
+  background: #353535;
+  color: #dddddd;
 }
 
 .footer p:first-child {
