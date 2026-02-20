@@ -852,14 +852,17 @@ body {
 
 .product-text {
   padding: 25px;
+  text-align: center;   /* 🔥 가운데 정렬 */
 }
 
 .product-text h3 {
   font-size: 22px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .product-text p {
   color: #666;
   font-size: 15px;
+  text-align: center;
 }
