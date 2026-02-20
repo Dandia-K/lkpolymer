@@ -319,6 +319,35 @@ body {
   color: #0f5e34;
 }
 
+/* ================= ABOUT TITLE REFINEMENT ================= */
+
+.container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.container h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0f5e34;
+  margin-top: 12px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.container strong {
+  color: #0f5e34;
+}
+
 /* ================= FEATURE LIST ================= */
 
 .feature-list {
