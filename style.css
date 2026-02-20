@@ -163,6 +163,25 @@ body {
   font-size: 20px;
 }
 
+/* ================= HERO BUTTON ================= */
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 36px;
+  border: 2px solid #ffffff;
+  color: #ffffff;        /* 흰색 글씨 */
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #111;           /* hover 시 어두운 글씨 */
+}
+
 /* ================= OVERLAY ================= */
 
 .overlay {
