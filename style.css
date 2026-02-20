@@ -356,8 +356,10 @@ body {
 
 /* ================= 모바일 스크롤 제어 ================= */
 
-body.menu-open {
-  overflow: hidden;
+@media (max-width: 768px) {
+  body.menu-open {
+    overflow: hidden;
+  }
 }
 
 /* ================= MOBILE MENU ANIMATION ================= */
