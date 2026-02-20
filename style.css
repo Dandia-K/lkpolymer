@@ -169,6 +169,11 @@ body {
   margin-top: 15px;
 }
 
+.container p {
+  max-width: 700px;
+  line-height: 1.8;
+}
+
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
