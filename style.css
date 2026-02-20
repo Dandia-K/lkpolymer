@@ -950,3 +950,31 @@ body {
     max-width: 100%;
   }
 }
+
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.thumb-list {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.thumb-list img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.thumb-list img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
