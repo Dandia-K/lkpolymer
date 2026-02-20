@@ -166,27 +166,27 @@ body {
 }
 
 /* =========================================
-   DARK MODE 기본 세트
+   밝은 다크모드 (고급 그레이 톤)
 ========================================= */
 
 body {
-  background: #121212;
-  color: #e0e0e0;
+  background: #1f1f1f;   /* 기존보다 밝음 */
+  color: #e5e5e5;
 }
 
 /* HEADER */
 .header {
-  background: #1b1b1b;
-  border-bottom: 1px solid #2a2a2a;
+  background: #242424;
+  border-bottom: 1px solid #333;
 }
 
 .menu-btn {
-  color: #e0e0e0;
+  color: #e5e5e5;
 }
 
 /* MEGA MENU */
 .mega-menu {
-  background: #1e1e1e;
+  background: #2a2a2a;
   border-top: 3px solid #0f5e34;
 }
 
@@ -195,27 +195,28 @@ body {
 }
 
 .mega-column a {
-  color: #bbbbbb;
+  color: #cccccc;
 }
 
 .mega-column a:hover {
   color: #0f5e34;
 }
 
-/* HERO */
+/* HERO 오버레이 살짝 줄임 */
 .hero::before {
-  background: rgba(0,0,0,0.6);   /* 더 깊은 톤 */
+  background: rgba(0,0,0,0.45);
 }
 
 /* FOOTER */
 .footer {
-  background: #181818;
-  color: #aaaaaa;
+  background: #222;
+  color: #bbbbbb;
 }
 
 .footer p:first-child {
   color: #ffffff;
 }
+
 
 
 
