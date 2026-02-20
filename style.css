@@ -384,6 +384,14 @@ body {
   font-size: 15px;
 }
 
+/* ================= 오버레이 텍스트 색상 강제 적용 ================= */
+
+.premium-card .card-overlay-content,
+.premium-card .card-overlay-content p,
+.premium-card .card-overlay-content .sub,
+.premium-card .card-overlay-content .feature-item {
+  color: #ffffff !important;
+}
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
