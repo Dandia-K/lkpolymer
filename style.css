@@ -616,3 +616,20 @@ body {
   color: #555;
   line-height: 1.7;
 }
+@media (max-width: 768px) {
+
+  .history-inner::before {
+    left: 20px;
+  }
+
+  .history-item {
+    flex-direction: column;
+    padding-left: 40px;
+  }
+
+  .history-year {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+}
