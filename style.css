@@ -117,23 +117,39 @@ body {
 .hero {
   margin-top: 90px;
   height: 90vh;
-  background: url('main.jpg') no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  position: relative;
 }
 
+/* 영상 */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 어두운 오버레이 */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
 }
 
+/* 텍스트는 위로 */
 .hero-text {
   position: relative;
+  z-index: 2;
   text-align: center;
 }
 
