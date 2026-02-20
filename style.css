@@ -168,31 +168,39 @@ body {
 
 /* ========================== 본문 ========================== */
 
+/* ================= 본문 카드형 ================= */
 
 .container {
   max-width: 900px;
   margin: 140px auto;
-  padding: 0 20px;
+  padding: 60px 60px;        /* 안쪽 여백 */
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
+/* 제목 */
 .container h1 {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 30px;
   position: relative;
 }
 
+/* 제목 아래 포인트 라인 */
 .container h1::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 60px;
   height: 3px;
   background: #0f5e34;
   margin-top: 15px;
 }
 
+/* 본문 텍스트 */
 .container p {
-  max-width: 700px;
   line-height: 1.8;
+  color: #444;
 }
 
 
