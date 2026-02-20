@@ -81,6 +81,15 @@ body {
   transform: translateX(4px);
 }
 
+.mega-column {
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.mega-column:last-child {
+  border-right: none;
+}
+
 
 /* ================= HERO ================= */
 
