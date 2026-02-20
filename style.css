@@ -239,15 +239,11 @@ body {
   color: rgba(255,255,255,0.9);
 }
 
-/* ================= FOOTER - Brand Dark Green ================= */
+/* ================= FOOTER - 밝은 브랜드 그린 ================= */
 
 .footer {
-  background: linear-gradient(
-  to right,
-  #16261f,
-  #1b2f27
-);
-  color: rgba(255,255,255,0.85);
+  background: #1f332b;
+  color: rgba(255,255,255,0.9);
   text-align: center;
   padding: 80px 20px;
   font-size: 14px;
@@ -267,5 +263,5 @@ body {
 .footer p:last-child {
   margin-top: 20px;
   font-size: 13px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.7);
 }
