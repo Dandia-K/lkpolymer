@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>공장소개 | LK폴리머</title>
+  <title>LK폴리머</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,102 +16,96 @@
 
     <div class="nav-logo">
       <a href="index.html">
-        <img src="logo.jpg" alt="LK폴리머 로고">
+        <img src="logo.png" alt="LK폴리머 로고">
       </a>
     </div>
 
-    <ul class="main-menu">
-      <li><a href="about.html">회사소개</a></li>
-      <li><a href="products.html">제품소개</a></li>
-      <li><a href="factory.html">공장소개</a></li>
-      <li><a href="certificates.html">인증현황</a></li>
-      <li><a href="contact-main.html">연락문의</a></li>
-    </ul>
-
+    <!-- 햄버거 버튼 -->
+    <div class="menu-btn" id="menuBtn">☰</div>
   </div>
 
-  <!-- 메가 메뉴 -->
-  <div class="mega-menu">
-    <div class="mega-inner">
+  <!-- ===== MEGA MENU ===== -->
+  <div class="mega-menu" id="megaMenu">
+<div class="mega-inner">
 
-      <div class="mega-column">
-        <h4>회사소개</h4>
-        <a href="history.html">연혁</a>
-        <a href="ceo.html">CEO 인사말</a>
-        <a href="location.html">오시는 길</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="about.html">회사소개</a></h4>
+  <a href="history.html">연혁</a>
+  <a href="ceo.html">CEO 인사말</a>
+  <a href="location.html">오시는 길</a>
+</div>
 
-      <div class="mega-column">
-        <h4>제품소개</h4>
-        <a href="spgb.html">종량제봉투</a>
-        <a href="plasticbag.html">일반봉투</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="products.html">제품소개</a></h4>
+  <a href="spgb.html">종량제봉투</a>
+  <a href="plasticbag.html">일반봉투</a>
+</div>
 
-      <div class="mega-column">
-        <h4>공장소개</h4>
-        <a href="extrusion.html">압출시설</a>
-        <a href="printing.html">인쇄시설</a>
-        <a href="foundation.html">가공시설</a>
-        <a href="factoryect.html">기타</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="factory.html">공장소개</a></h4>
+  <a href="extrusion.html">압출시설</a>
+  <a href="printing.html">인쇄시설</a>
+  <a href="foundation.html">가공시설</a>
+</div>
 
-      <div class="mega-column">
-        <h4>인증현황</h4>
-        <a href="certificates.html">인증서</a>
-      </div>
+<div class="mega-column">
+  <h4><a href="certificates.html">인증현황</a></h4>
+  <a href="certificates.html">인증서</a>
+</div>
 
-      <div class="mega-column">
-        <h4>연락문의</h4>
-        <a href="question.html">자주찾는질문</a>
-        <a href="contact.html">상담요청</a>
-      </div>
-
+<div class="mega-column">
+  <h4><a href="contact.html">연락문의</a></h4>
+  <a href="question.html">자주찾는질문</a>
+  <a href="contact.html">상담요청</a>
+</div>
     </div>
   </div>
-
 </nav>
 
-<!-- ===== PAGE TITLE ===== -->
-<section class="page-title">
+<div class="overlay" id="overlay"></div>
+
+<section class="sub-hero">
   <h1>공장소개</h1>
-  <p>LK폴리머 생산 설비 안내</p>
 </section>
 
-<!-- ===== INTRO ===== -->
-<section class="container factory-intro">
-  <p>
-    LK폴리머는 압출, 인쇄, 가공 등
-    전 공정을 자체 운영하며
-    안정적인 품질과 납기 대응 시스템을 갖추고 있습니다.
-  </p>
+<section class="factory-intro">
+  <div class="factory-inner">
+
+    <div class="factory-text">
+      <h2>안정적인 생산 시스템</h2>
+      <p>
+        LK폴리머는 압출, 인쇄, 가공까지
+        일괄 생산이 가능한 설비를 보유하고 있습니다.
+        체계적인 공정 관리로 고품질 제품을 생산합니다.
+      </p>
+    </div>
+
+    <div class="factory-image">
+      <img src="factory-main.jpg" alt="공장 전경">
+    </div>
+
+  </div>
 </section>
 
-<!-- ===== FACTORY CARDS ===== -->
-<section class="container factory-grid">
+<section class="factory-process">
 
-  <a href="extrusion.html" class="factory-card">
-    <img src="extrusion.jpg" alt="압출시설">
-    <h3>압출시설</h3>
-    <p>원단 생산 공정</p>
-  </a>
+  <div class="process-card">
+    <img src="extrusion.jpg">
+    <h3>압출 설비</h3>
+    <p>안정적인 필름 생산 공정</p>
+  </div>
 
-  <a href="printing.html" class="factory-card">
-    <img src="printing.jpg" alt="인쇄시설">
-    <h3>인쇄시설</h3>
-    <p>정밀 인쇄 공정</p>
-  </a>
+  <div class="process-card">
+    <img src="printing.jpg">
+    <h3>인쇄 설비</h3>
+    <p>정밀하고 선명한 인쇄 품질</p>
+  </div>
 
-  <a href="foundation.html" class="factory-card">
-    <img src="foundation.jpg" alt="가공시설">
-    <h3>가공시설</h3>
-    <p>절단 · 포장 공정</p>
-  </a>
-
-  <a href="factoryect.html" class="factory-card">
-    <img src="factory.jpg" alt="기타시설">
-    <h3>기타시설</h3>
-    <p>부대 및 물류 시스템</p>
-  </a>
+  <div class="process-card">
+    <img src="processing.jpg">
+    <h3>가공 설비</h3>
+    <p>정확한 규격과 마감 처리</p>
+  </div>
 
 </section>
 
@@ -129,5 +123,6 @@
 
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
