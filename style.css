@@ -181,7 +181,7 @@ body {
 .footer p:first-child {
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.16);
 }
 
 .footer p {
@@ -197,5 +197,5 @@ body {
 .footer p:last-child {
   margin-top: 20px;
   font-size: 13px;
-  color: #888;
+  color: rgba(0, 0, 0, 0.16);
 }
