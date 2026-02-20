@@ -784,28 +784,26 @@ body {
   border-radius: 16px;
 }
 
-.map-links {
+/* 버튼 중앙 정렬 */
+.map-link-wrap {
+  text-align: center;
   margin-top: 20px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.map-links a {
-  padding: 12px 22px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
 }
 
 .naver-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
   background: #03C75A;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.tmap-btn {
-  background: #ff5a00;
+.naver-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 @media (max-width: 768px) {
