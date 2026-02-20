@@ -20,6 +20,7 @@ body {
   background: #fafafa;
   border-bottom: none;
   z-index: 1000;
+  border-top: 2px solid #0f5e34;
 }
 
 .nav-top {
@@ -241,7 +242,11 @@ body {
 /* ================= FOOTER - Brand Dark Green ================= */
 
 .footer {
-  background: #16261f;
+  background: linear-gradient(
+  to right,
+  #16261f,
+  #1b2f27
+);
   color: rgba(255,255,255,0.85);
   text-align: center;
   padding: 80px 20px;
