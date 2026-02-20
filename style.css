@@ -105,6 +105,25 @@ body {
   color: #0f5e34;
 }
 
+/* ================= ACTIVE MENU ================= */
+
+.mega-column a.active,
+.mega-column h4 a.active {
+  color: #0f5e34;
+  font-weight: 700;
+}
+
+.mega-column a.active::after,
+.mega-column h4 a.active::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #0f5e34;
+  margin: 6px auto 0;
+}
+
+
 /* ================= HERO VIDEO ================= */
 
 .hero {
