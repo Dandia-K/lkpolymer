@@ -1,26 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
 
-  const menuBtn = document.getElementById("menuBtn");
-  const megaMenu = document.getElementById("megaMenu");
-  const overlay = document.getElementById("overlay");
+  const mainImage = document.querySelector(".main-image img");
+  const thumbnails = document.querySelectorAll(".thumb-list img");
 
-  if (!menuBtn || !megaMenu || !overlay) return;
+  if (!mainImage) return;
 
-  menuBtn.addEventListener("click", function() {
-    megaMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
-
-  overlay.addEventListener("click", function() {
-    megaMenu.classList.remove("active");
-    overlay.classList.remove("active");
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener("click", function() {
+      mainImage.src = this.src;
+    });
   });
 
 });
-
-function changeImage(element) {
-  const main = document.getElementById("mainProductImage");
-  if (main) {
-    main.src = element.src;
-  }
-}
