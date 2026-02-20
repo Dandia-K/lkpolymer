@@ -715,4 +715,12 @@ body {
     font-size: 22px;
   }
 
+  .ceo-sign {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signature-img {
+    height: 45px;
+  }
 }
