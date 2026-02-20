@@ -90,6 +90,24 @@ body {
   border-right: none;
 }
 
+.mega-menu {
+  position: fixed;
+  top: 90px;              /* 헤더 높이 */
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 3px solid #0f5e34;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  z-index: 900;
+}
+
+.mega-menu.active {
+  max-height: 600px;
+}
 
 /* ================= HERO ================= */
 
