@@ -1023,6 +1023,13 @@ body {
 
 .process-card {
   text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
 }
 
 .process-card img {
