@@ -235,6 +235,28 @@ body {
   color: #444;
 }
 
+/* ================= 카드 2단 레이아웃 ================= */
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-image {
+  flex: 1;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
 
 /* ================= FOOTER (히어로 톤 통일) ================= */
 
