@@ -78,3 +78,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+/* ================= 왼쪽메가메뉴 ================= */
+document.addEventListener("DOMContentLoaded", function() {
+  const currentPage = window.location.pathname.split("/").pop();
+  const subLinks = document.querySelectorAll(".sub-sidebar a");
+
+  subLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
