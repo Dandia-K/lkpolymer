@@ -649,15 +649,6 @@ body {
   align-items: center;
 }
 
-.ceo-image {
-  flex: 0.7;   /* 1 → 0.7 */
-}
-
-.ceo-image img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
 
 .ceo-message {
   flex: 1.3;
