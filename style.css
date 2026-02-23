@@ -1386,9 +1386,9 @@ aspect-ratio: 2 / 3;
 
 .sub-layout {
   max-width: 1200px;
-  margin: 120px auto;
+  margin: 100px auto;
   display: flex;
-  gap: 60px;
+  gap: 80px;
   padding: 0 20px;
 }
 
