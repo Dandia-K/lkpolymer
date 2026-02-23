@@ -590,6 +590,11 @@ body {
   background: #0f5e34;
 }
 
+.history-header {
+  margin-top: 40px;     /* 위쪽 여백 추가 */
+  margin-bottom: 60px;
+}
+
 .history-item {
   display: flex;
   margin-bottom: 60px;
