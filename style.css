@@ -719,16 +719,16 @@ body {
 /* ================= LOCATION PAGE ================= */
 
 .location-section {
-  padding: 120px 20px;
+  padding: 0 20px 60px 20px;
   background: #ffffff;
   padding-top: 0;
 }
 
 .location-inner {
   max-width: 1200px;
-  margin: 60 auto;
+  margin: 0 auto;
   display: flex;
-  align-items: center;   /* 🔥 핵심 */
+  align-items: flex-start;   /* 🔥 핵심 */
   gap: 60px;
 }
 
@@ -808,6 +808,8 @@ body {
     height: 300px;
   }
 }
+
+/* ================= PRODUCTS PAGE ================= */
 
 .products-section {
   padding: 100px 20px;
