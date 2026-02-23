@@ -1386,7 +1386,7 @@ aspect-ratio: 2 / 3;
 
 .sub-layout {
   max-width: 1200px;
-  margin: 80px auto;
+  margin: 40px auto;
   display: flex;
   gap: 80px;
   align-items: flex-start;   /* 핵심 */
@@ -1435,6 +1435,7 @@ aspect-ratio: 2 / 3;
 /* 본문 */
 .sub-content {
   flex: 1;
+}
 .sub-content > section {
   padding-top: 0;
 }
