@@ -90,3 +90,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+document.querySelectorAll(".side-title").forEach(title => {
+  title.addEventListener("click", function() {
+    const group = this.parentElement;
+    group.classList.toggle("active");
+  });
+});
