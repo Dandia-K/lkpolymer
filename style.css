@@ -591,8 +591,12 @@ body {
 }
 
 .history-header {
-  margin-top: 40px;     /* 위쪽 여백 추가 */
+  margin-top: 50px;     /* 위쪽 여백 추가 */
   margin-bottom: 60px;
+}
+
+.history-header h2 {
+  margin-bottom: 20px;
 }
 
 .history-item {
