@@ -897,7 +897,7 @@ body {
   margin: 0 auto;
   display: flex;
   gap: 80px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .detail-image img {
