@@ -912,6 +912,7 @@ body {
 
 .detail-info h2 {
   font-size: 34px;
+  margin-top: 0;  
   margin-bottom: 20px;
 }
 
