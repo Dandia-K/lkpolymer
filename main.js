@@ -97,3 +97,15 @@ document.querySelectorAll(".side-title").forEach(title => {
     group.classList.toggle("active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
+  const sideLinks = document.querySelectorAll(".side-group a");
+
+  sideLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+      link.closest(".side-group").classList.add("active");
+    }
+  });
+});
