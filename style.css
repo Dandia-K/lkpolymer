@@ -29,7 +29,7 @@ body {
 }
 
 .nav-top {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   height: 90px;
   display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .mega-inner {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -220,7 +220,7 @@ body {
 }
 
 .about-intro .inner {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -239,7 +239,7 @@ body {
 
 .premium-card {
   position: relative;
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 140px auto;
   border-radius: 20px;
   overflow: hidden;
@@ -574,7 +574,7 @@ body {
 }
 
 .history-inner {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
 }
@@ -660,7 +660,7 @@ body {
 }
 
 .ceo-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   gap: 60px;
@@ -743,7 +743,7 @@ body {
 }
 
 .location-inner {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;   /* 🔥 핵심 */
@@ -834,7 +834,7 @@ body {
 }
 
 .products-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -893,7 +893,7 @@ body {
 }
 
 .detail-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   gap: 80px;
@@ -999,7 +999,7 @@ body {
 }
 
 .factory-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1065,7 +1065,7 @@ body {
 }
 
 .extrusion-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   gap: 80px;
@@ -1093,7 +1093,7 @@ body {
 }
 
 .extrusion-feature {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 100px auto;
   padding: 0 20px;
 }
@@ -1147,7 +1147,7 @@ body {
 }
 
 .certificate-grid {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 60px auto 120px;
   padding: 0 20px;
   display: grid;
@@ -1249,7 +1249,7 @@ aspect-ratio: 2 / 3;
 }
 
 .contact-main-inner {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1296,7 +1296,7 @@ aspect-ratio: 2 / 3;
 }
 
 .faq-inner {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -1344,7 +1344,7 @@ aspect-ratio: 2 / 3;
 }
 
 .contact-inner {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   gap: 80px;
@@ -1407,7 +1407,7 @@ aspect-ratio: 2 / 3;
 /* ================= SUB PAGE LAYOUT ================= */
 
 .sub-layout {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 60px auto;
   display: flex;
   gap: 60px;
