@@ -1526,3 +1526,22 @@ aspect-ratio: 2 / 3;
 .side-group.active .side-title::after {
   transform: rotate(90deg);
 }
+
+.side-group ul li a.active {
+  color: #0f5e34;
+  font-weight: 700;
+  position: relative;
+  background: #f6faf8;
+  border-left: 4px solid #0f5e34;
+  padding-left: 16px;
+}
+
+.side-group ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 8px;
+  width: calc(100% - 40px);
+  height: 2px;
+  background: #0f5e34;
+}
