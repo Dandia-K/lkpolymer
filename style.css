@@ -347,6 +347,18 @@ body {
   color: #0f5e34;
 }
 
+.sub-layout {
+  max-width: 1400px;
+  margin: 60px auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.sub-content {
+  flex: 1;
+}
+
 /* ================= FEATURE LIST ================= */
 
 .feature-list {
@@ -446,6 +458,15 @@ body {
   .overlay {
     display: none; /* 앱 느낌이라 오버레이 제거 */
   }
+  
+  .side-nav {
+    display: none;
+  }
+
+  .sub-layout {
+    display: block;
+  }
+  
 }
 
 /* ================= 모바일 스크롤 제어 ================= */
