@@ -123,6 +123,17 @@ html {
   font-size: 36px;
 }
 
+/* ================= MEGA MENU ================= */
+
+.mega-column h4.active a {
+  color: #0f5e34;
+  font-weight: 700;
+}
+
+.mega-column a.active {
+  color: #0f5e34;
+  font-weight: 600;
+}
 /* ================= SIDE NAV ================= */
 
 .side-nav {
