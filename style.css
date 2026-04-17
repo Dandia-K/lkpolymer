@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== 핵심 레이아웃 복구 ===== */
+/* ===== processing 페이지 안정화 ===== */
 
 .sub-layout {
   max-width: 1300px;
@@ -24,28 +24,35 @@ html {
   align-items: flex-start;
 }
 
+.side-nav {
+  flex: 0 0 240px;
+}
+
 .sub-content {
   flex: 1;
   min-width: 0;
 }
 
-.side-nav {
-  flex: 0 0 240px;
+.processing-detail .facility-image {
+  flex: 0 0 300px;
+  max-width: 300px;
 }
 
-/* ===== 이미지 강제 안정화 ===== */
-
-.detail-image,
-.facility-image {
-  flex: 0 0 320px;
-  max-width: 320px;
-}
-
-.detail-image img,
-.facility-image img {
+.processing-detail .facility-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 12px;
+}
+
+.processing-detail .facility-info {
+  flex: 1;
+}
+
+.processing-detail .facility-inner {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
 }
 
 /* ================= LAYOUT SYSTEM ================= */
