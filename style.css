@@ -64,6 +64,25 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
+/* ============== MEGA MENU =============== */
+
+.mega-menu {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.mega-menu.active {
+  display: block;
+  opacity: 1;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
 
 /* ================= HERO ================= */
 
