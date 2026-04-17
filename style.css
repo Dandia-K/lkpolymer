@@ -33,6 +33,21 @@ html {
   flex: 0 0 240px;
 }
 
+/* ===== 이미지 강제 안정화 ===== */
+
+.detail-image,
+.facility-image {
+  flex: 0 0 320px;
+  max-width: 320px;
+}
+
+.detail-image img,
+.facility-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 /* ================= LAYOUT SYSTEM ================= */
 
 .container {
