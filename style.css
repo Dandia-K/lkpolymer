@@ -1091,7 +1091,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  gap: 100px;
+  gap: 60px;
   align-items: flex-start;
 }
 
@@ -1103,7 +1103,7 @@ body {
 }
 
 .facility-info {
-  flex: 1;
+  flex: 1.2;
 }
 
 .facility-info h2 {
@@ -1130,6 +1130,18 @@ body {
 .facility-spec li {
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.facility-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 /* 모바일 */
