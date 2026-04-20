@@ -67,13 +67,26 @@ body {
 /* ============== MEGA MENU =============== */
 
 .mega-menu {
-  opacity: 0;
-  transition: 0.3s;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #eee;
+  display: none;
+  z-index: 999;
 }
 
 .mega-menu.active {
   display: block;
-  opacity: 1;
+}
+
+.mega-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .overlay {
